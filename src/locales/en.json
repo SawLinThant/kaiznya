@@ -141,7 +141,10 @@
       "about_rental": "Discover More About Property Rental",
       "newsletter": "NEWSLETTER",
       "trending_products": "Trending",
-      "trending_products_subtitle": "Popular products this week"
+      "trending_products_subtitle": "Popular products this week",
+      "explore_colors": "Explore by Colors",
+      "about_service": "Why you'll love to shop on our website",
+      "from_the_blog": "From The Blog"
     },
     "actions": {
       "show_on_map": "Show On Map",
@@ -159,7 +162,8 @@
       "ask_question": "Ask A Question",
       "find_property_link": "Find A Property",
       "stay_updated": "Stay Up to Date",
-      "email_placeholder": "Your email..."
+      "email_placeholder": "Your email...",
+      "read_more": "READ MORE"
     },
     "footer": {
       "company": "COMPANY",
@@ -182,9 +186,29 @@
   },
   "categories": {
     "shorts": "SHORTS",
-    "hat": "HAT", 
+    "hat": "HAT",
     "jackets": "JACKETS",
     "shoes": "SHOES",
     "t_shirt": "T-SHIRT"
+  },
+  "testimonial": {
+    "quote": "Love the way they handle the order.",
+    "author": "Samantha William",
+    "role": "Fashion Enthusiast",
+    "description": "Very professional and friendly at the same time. They packed the order on schedule and the detail of their wrapping is top notch. One of my best experience for buying online items. Surely will come back for another purchase."
+  },
+  "service_features": {
+    "take-care-with-love": {
+      "title": "Take care with love",
+      "description": "We take care your package with full of attention and of course full of love. We want to make sure you'll receive your package like you receive your birthday gift."
+    },
+    "friendly-customer-service": {
+      "title": "Friendly Customer Service",
+      "description": "You do not need to worry when you want to check your package. We will always answer whatever your questions. Just click on the chat icon and we will talk."
+    },
+    "refund-process": {
+      "title": "Refund Process",
+      "description": "Refund is a such bad experience and we don't want that thing happen to you. But when it's happen we will make sure you will through smooth and friendly process."
+    }
   }
 } 

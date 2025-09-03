@@ -131,11 +131,11 @@ const TrendingProductsSection: React.FC<TrendingProductsSectionProps> = ({
   }, []);
 
   return (
-    <section className={cn("py-8 sm:py-12 lg:py-16", className)}>
+    <section className={cn("pt-4 sm:pt-8 lg:pt-8", className)}>
       <div className="max-w-7xl mx-auto px-4 lg:px-0 md:px-0">
         
         {/* Section Header with Title Left and Categories Right */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-8 sm:mb-12">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2 sm:mb-8">
           {/* Title on Left */}
           <div className="mb-6 lg:mb-0">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
@@ -184,7 +184,7 @@ const TrendingProductsSection: React.FC<TrendingProductsSectionProps> = ({
           {/* Desktop Asymmetric Layout - 2 Rows with 3 Products Each */}
           <div className="space-y-0">
             {/* First Row: 2 small + 1 large */}
-                          <div className="grid grid-cols-4 gap-4 h-[28rem] overflow-hidden">
+                          <div className="grid grid-cols-4 gap-4 min-h-[24rem] overflow-hidden">
               {/* First Small Product */}
               {displayedProducts[0] && (
                 <div className="col-span-1 h-full overflow-hidden">

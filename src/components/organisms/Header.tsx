@@ -13,20 +13,20 @@ const Header: React.FC<HeaderProps> = ({ dict, className }) => {
     <header className={cn("bg-white border-gray-200 hidden md:block", className)}>
       {/* Top Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 lg:px-0 md:px-0">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 gap-8">
           {/* Logo/Brand */}
           <div className="flex items-center gap-4">
             <Link href="/" className="text-xl font-bold text-gray-900">
               ECOMMERCE
             </Link>
             <div className="relative w-full">
-              <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+              <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
                 <Icon name="search" className="h-4 w-4 text-gray-400" />
               </div>
               <Input
                 type="text"
                 placeholder="Search here"
-                className="pl-2 pr-4 py-2 w-full border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                className="pl-4 pr-4 py-2 w-full border border-gray-300 rounded-full focus:ring-2 focus:ring-gray-900 focus:border-transparent"
               />
             </div>
             {/* Category Dropdown */}

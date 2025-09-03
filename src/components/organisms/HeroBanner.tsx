@@ -73,8 +73,8 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
   return (
     <section className={cn("relative overflow-hidden", className)}>
       {/* Main Hero Container */}
-      <div className="max-w-7xl mx-auto py-4 px-4 lg:px-0 md:px-0">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 min-h-[550px] sm:min-h-[500px]">
+      <div className="max-w-7xl mx-auto pt-4 pb-[0.5rem] px-4 lg:px-0 md:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-2 min-h-[550px] sm:min-h-[500px]">
           
           {/* Left Content - Banner Slider */}
           <div 
@@ -83,7 +83,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
             onMouseLeave={handleMouseLeave}
           >
             {/* Slider Container */}
-            <div className="relative h-full min-h-[350px] sm:min-h-[400px] overflow-hidden" style={{ borderRadius: '1rem' }}>
+            <div className="relative h-full min-h-[350px] sm:min-h-[400px] overflow-hidden" style={{ borderRadius: '2rem' }}>
               
               {/* Slides */}
               <div className="relative w-full h-full">
@@ -189,13 +189,13 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
           </div>
           
           {/* Right Content - Category Cards */}
-          <div className="lg:col-span-3 space-y-4 lg:space-y-6 order-2 lg:order-2">
+          <div className="lg:col-span-3 space-y-4 lg:space-y-2 order-2 lg:order-2">
             
             {/* Outdoor Active Card */}
             <div 
               className="relative h-[320px] sm:h-[350px] overflow-hidden bg-cover bg-center bg-no-repeat"
               style={{
-                borderRadius: '1rem',
+                borderRadius: '2rem',
                 backgroundImage: 'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")',
                 backgroundColor: '#E5F3FF' // Fallback color
               }}
@@ -215,7 +215,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
             <div 
               className="relative h-[320px] sm:h-[350px] overflow-hidden bg-cover bg-center bg-no-repeat"
               style={{
-                borderRadius: '1rem',
+                borderRadius: '2rem',
                 backgroundImage: 'url("https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")',
                 backgroundColor: '#FFF5F5' // Fallback color
               }}
