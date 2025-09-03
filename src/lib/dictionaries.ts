@@ -6,11 +6,14 @@ const dictionaries = {
   my: () => import('../locales/my.json').then((module) => module.default),
 };
 
-export const getDictionary = async (locale: Locale) => {
-  if (!(locale in dictionaries)) {
-    throw new Error(`Dictionary for locale "${locale}" not found`);
+export const getDictionary = async (locale: Locale | string) => {
+  const key = (locale as string) || 'en';
+  if (!(key in dictionaries)) {
+    // Fallback safely to English for unknown locales (e.g., requests to /serviceWorker.js)
+    return dictionaries.en();
   }
-  return dictionaries[locale]();
+  // @ts-expect-error safe after guard
+  return dictionaries[key]();
 };
 
 // Type for translation keys with dot notation support
