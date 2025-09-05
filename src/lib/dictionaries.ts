@@ -1,9 +1,28 @@
 import 'server-only';
 import type { Locale } from './constants';
 
+const CDN_DICTIONARY_URLS: Record<string, string> = {
+  en: 'https://cdn.kanaiya.shop/kanaiya_json/locale/en.json',
+  my: 'https://cdn.kanaiya.shop/kanaiya_json/locale/my.json',
+  th: 'https://cdn.kanaiya.shop/kanaiya_json/locale/th.json',
+};
+
+async function fetchDictionary(url: string) {
+  const res = await fetch(url, {
+    // Cache on the server for a short period to reduce load
+    next: { revalidate: 300 },
+    headers: { 'Accept': 'application/json' },
+  });
+  if (!res.ok) {
+    throw new Error(`Failed to load dictionary from ${url}: ${res.status}`);
+  }
+  return res.json();
+}
+
 const dictionaries = {
-  en: () => import('../locales/en.json').then((module) => module.default),
-  my: () => import('../locales/my.json').then((module) => module.default),
+  en: () => fetchDictionary(CDN_DICTIONARY_URLS.en),
+  my: () => fetchDictionary(CDN_DICTIONARY_URLS.my),
+  th: () => fetchDictionary(CDN_DICTIONARY_URLS.th),
 };
 
 export const getDictionary = async (locale: Locale | string) => {

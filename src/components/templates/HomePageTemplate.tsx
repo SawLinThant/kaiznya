@@ -12,9 +12,11 @@ const HomePageTemplate: React.FC<HomePageTemplateProps> = ({ dict }) => {
       {/* Header */}
       <Header dict={dict} />
       
+      {/* To Do - add product brand video here */}
+
       {/* Hero Banner Section */}
       <HeroBanner dict={dict} />
-      
+      {/* TO Do - use one rpoduct form each category for featured product in Hero section */}
       {/* Casual Inspirations Section */}
       <CasualInspirationsSection dict={dict} />
 

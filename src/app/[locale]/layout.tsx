@@ -2,7 +2,7 @@ import { getDictionary } from '@/lib/dictionaries';
 import { Locale } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 
-const locales = ['en', 'my'];
+const locales = ['en', 'my', 'th'];
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

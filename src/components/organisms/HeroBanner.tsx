@@ -189,6 +189,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
           </div>
           
           {/* Right Content - Category Cards */}
+          {/* replace with face serum image as feature image */}
           <div className="lg:col-span-3 space-y-4 lg:space-y-2 order-2 lg:order-2">
             
             {/* Outdoor Active Card */}

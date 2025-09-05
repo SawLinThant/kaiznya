@@ -1,0 +1,216 @@
+{
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "retry": "ลองอีกครั้ง",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน",
+    "save": "บันทึก",
+    "edit": "แก้ไข",
+    "delete": "ลบ",
+    "create": "สร้าง",
+    "update": "อัปเดต",
+    "search": "ค้นหา",
+    "filter": "กรอง",
+    "clear": "ล้าง",
+    "back": "ย้อนกลับ",
+    "next": "ถัดไป",
+    "previous": "ก่อนหน้า",
+    "submit": "ส่ง",
+    "close": "ปิด"
+  },
+  "navigation": {
+    "home": "หน้าแรก",
+    "rooms": "ห้องพัก",
+    "booking": "การจอง",
+    "about": "เกี่ยวกับ",
+    "contact": "ติดต่อ",
+    "admin": "ผู้ดูแล",
+    "login": "เข้าสู่ระบบ",
+    "logout": "ออกจากระบบ",
+    "profile": "โปรไฟล์"
+  },
+  "rooms": {
+    "title": "ห้องพักของเรา",
+    "available": "ว่าง",
+    "occupied": "มีผู้เข้าพัก",
+    "maintenance": "ปิดปรับปรุง",
+    "price": "ราคา",
+    "per_night": "ต่อคืน",
+    "capacity": "ความจุ",
+    "amenities": "สิ่งอำนวยความสะดวก",
+    "book_now": "จองตอนนี้",
+    "view_details": "ดูรายละเอียด",
+    "room_type": "ประเภทห้อง",
+    "single": "ห้องเดี่ยว",
+    "double": "ห้องคู่",
+    "suite": "ห้องสวีท",
+    "deluxe": "ห้องดีลักซ์"
+  },
+  "booking": {
+    "title": "จองที่พักของคุณ",
+    "check_in": "วันเช็คอิน",
+    "check_out": "วันเช็คเอาต์",
+    "guests": "จำนวนผู้เข้าพัก",
+    "room_selection": "เลือกห้อง",
+    "personal_info": "ข้อมูลส่วนตัว",
+    "first_name": "ชื่อ",
+    "last_name": "นามสกุล",
+    "email": "อีเมล",
+    "phone": "เบอร์โทร",
+    "special_requests": "คำขอพิเศษ",
+    "total_amount": "ยอดรวม",
+    "confirm_booking": "ยืนยันการจอง",
+    "booking_confirmed": "ยืนยันการจองแล้ว",
+    "booking_id": "รหัสการจอง",
+    "payment_required": "ต้องชำระเงิน"
+  },
+  "admin": {
+    "dashboard": "แดชบอร์ดผู้ดูแล",
+    "room_management": "จัดการห้อง",
+    "booking_management": "จัดการการจอง",
+    "user_management": "จัดการผู้ใช้",
+    "add_room": "เพิ่มห้องใหม่",
+    "edit_room": "แก้ไขห้อง",
+    "room_number": "หมายเลขห้อง",
+    "room_status": "สถานะห้อง",
+    "set_maintenance": "ตั้งค่าปรับปรุง",
+    "booking_history": "ประวัติการจอง",
+    "guest_details": "รายละเอียดผู้เข้าพัก",
+    "check_in_guest": "เช็คอินผู้เข้าพัก",
+    "check_out_guest": "เช็คเอาต์ผู้เข้าพัก",
+    "reports": "รายงาน",
+    "revenue": "รายได้",
+    "occupancy_rate": "อัตราการเข้าพัก"
+  },
+  "auth": {
+    "sign_in": "เข้าสู่ระบบ",
+    "sign_up": "สมัครสมาชิก",
+    "password": "รหัสผ่าน",
+    "confirm_password": "ยืนยันรหัสผ่าน",
+    "forgot_password": "ลืมรหัสผ่าน?",
+    "remember_me": "จดจำฉัน",
+    "create_account": "สร้างบัญชี",
+    "have_account": "มีบัญชีอยู่แล้วหรือไม่?",
+    "no_account": "ยังไม่มีบัญชีหรือไม่?"
+  },
+  "errors": {
+    "required_field": "จำเป็นต้องกรอกข้อมูล",
+    "invalid_email": "กรุณากรอกอีเมลให้ถูกต้อง",
+    "invalid_phone": "กรุณากรอกเบอร์โทรให้ถูกต้อง",
+    "invalid_date": "กรุณาเลือกวันที่ให้ถูกต้อง",
+    "check_out_before_check_in": "วันเช็คเอาต์ต้องอยู่หลังวันเช็คอิน",
+    "room_not_available": "ไม่พบห้องว่างตามวันที่เลือก",
+    "booking_failed": "การจองล้มเหลว กรุณาลองใหม่",
+    "network_error": "เครือข่ายมีปัญหา กรุณาตรวจสอบการเชื่อมต่อ"
+  },
+  "success": {
+    "room_created": "สร้างห้องสำเร็จ",
+    "room_updated": "อัปเดตห้องสำเร็จ",
+    "room_deleted": "ลบห้องสำเร็จ",
+    "booking_created": "สร้างการจองสำเร็จ",
+    "booking_updated": "อัปเดตการจองสำเร็จ",
+    "booking_cancelled": "ยกเลิกการจองสำเร็จ",
+    "profile_updated": "อัปเดตโปรไฟล์สำเร็จ"
+  },
+  "home": {
+    "hero": {
+      "title": "ค้นหา",
+      "subtitle": "ทรัพย์สินที่เหมาะกับคุณ",
+      "search_placeholder": {
+        "location": "คุณอยากไปที่ไหน?",
+        "check_in": "เพิ่มวันที่",
+        "check_out": "เพิ่มวันที่",
+        "guests": "เพิ่มผู้เข้าพัก"
+      },
+      "search_button": "ค้นหา"
+    },
+    "categories": {
+      "rooms": "ห้องพัก",
+      "flats": "แฟลต",
+      "hostels": "โฮสเทล",
+      "villas": "วิลลา"
+    },
+    "sections": {
+      "latest_properties": "ทรัพย์สินล่าสุดในรายการ",
+      "nearby_properties": "ทรัพย์สินใกล้เคียง",
+      "top_rated_properties": "ทรัพย์สินยอดนิยม",
+      "featured_properties": "ทรัพย์สินแนะนำ",
+      "rental_guides": "คู่มือและเคล็ดลับการเช่า",
+      "mobile_app": "ดาวน์โหลดแอปมือถือของเรา",
+      "about_rental": "เรียนรู้เพิ่มเติมเกี่ยวกับการเช่า",
+      "newsletter": "จดหมายข่าว",
+      "trending_products": "กำลังเป็นที่นิยม",
+      "trending_products_subtitle": "สินค้ายอดนิยมสัปดาห์นี้",
+      "explore_colors": "สำรวจตามสี",
+      "about_service": "เหตุผลที่คุณจะรักการช้อปปิ้งกับเรา",
+      "from_the_blog": "จากบล็อก"
+    },
+    "actions": {
+      "show_on_map": "แสดงบนแผนที่",
+      "become_host": "เป็นโฮสต์",
+      "earn_extra": "สร้างรายได้พิเศษโดยให้เช่าทรัพย์สินของคุณ",
+      "browse_more": "ดูทรัพย์สินเพิ่มเติม",
+      "explore_categories": "สำรวจตามประเภททรัพย์สิน",
+      "find_property": "ค้นหาทรัพย์สิน",
+      "view_all_blogs": "ดูบล็อกทั้งหมด",
+      "download_app": "ดาวน์โหลดแอปมือถือของเรา",
+      "available_platforms": "มีให้ใช้ฟรีบนแพลตฟอร์มเหล่านี้",
+      "playstore": "เพลย์สโตร์",
+      "appstore": "แอปสโตร์",
+      "discover_more": "ค้นหาเพิ่มเติม",
+      "ask_question": "ถามคำถาม",
+      "find_property_link": "ค้นหาทรัพย์สิน",
+      "stay_updated": "อัปเดตข่าวสาร",
+      "email_placeholder": "อีเมลของคุณ...",
+      "read_more": "อ่านเพิ่มเติม"
+    },
+    "footer": {
+      "company": "บริษัท",
+      "about_us": "เกี่ยวกับเรา",
+      "legal_info": "ข้อมูลทางกฎหมาย",
+      "contact_us": "ติดต่อเรา",
+      "blogs": "บล็อก",
+      "help_center": "ศูนย์ช่วยเหลือ",
+      "how_to_host": "จะเป็นโฮสต์ได้อย่างไร?",
+      "why_us": "ทำไมต้องเรา?",
+      "faqs": "คำถามที่พบบ่อย",
+      "rental_guides": "คู่มือการเช่า",
+      "contact_info": "ข้อมูลการติดต่อ",
+      "phone": "โทร: 1234567890",
+      "email": "อีเมล: company@email.com",
+      "location": "ที่ตั้ง: 100 SMART STREET, LA, USA",
+      "copyright": "© 2022 thecreation.design | สงวนลิขสิทธิ์",
+      "created_by": "สร้างด้วยความรักโดย thecreation.design"
+    }
+  },
+  "categories": {
+    "shorts": "กางเกงขาสั้น",
+    "hat": "หมวก",
+    "jackets": "เสื้อแจ็กเก็ต",
+    "shoes": "รองเท้า",
+    "t_shirt": "เสื้อยืด"
+  },
+  "testimonial": {
+    "quote": "ชอบวิธีที่พวกเขาจัดการคำสั่งซื้อ",
+    "author": "Samantha William",
+    "role": "ผู้หลงใหลแฟชั่น",
+    "description": "มืออาชีพมากและเป็นมิตร ใส่ใจในการแพ็กสินค้า ส่งตรงเวลา รายละเอียดการห่อของยอดเยี่ยม เป็นประสบการณ์การช้อปปิ้งออนไลน์ที่ดีที่สุดครั้งหนึ่งของฉัน แน่นอนว่าจะกลับมาซื้ออีก"
+  },
+  "service_features": {
+    "take-care-with-love": {
+      "title": "ดูแลด้วยความรัก",
+      "description": "เราดูแลพัสดุของคุณด้วยความใส่ใจและความรักอย่างเต็มที่ เราต้องการให้คุณได้รับพัสดุเหมือนกับได้รับของขวัญวันเกิดของคุณ"
+    },
+    "friendly-customer-service": {
+      "title": "บริการลูกค้าที่เป็นมิตร",
+      "description": "ไม่ต้องกังวลเมื่อคุณต้องการตรวจสอบพัสดุของคุณ เราจะตอบคำถามของคุณเสมอ เพียงคลิกที่ไอคอนแชตแล้วมาคุยกัน"
+    },
+    "refund-process": {
+      "title": "กระบวนการคืนเงิน",
+      "description": "การคืนเงินเป็นประสบการณ์ที่ไม่ดีและเราไม่ต้องการให้เกิดขึ้นกับคุณ แต่หากเกิดขึ้น เราจะทำให้กระบวนการราบรื่นและเป็นมิตร"
+    }
+  }
+}
+
+

@@ -77,7 +77,7 @@ const AboutServiceSection: React.FC<AboutServiceSectionProps> = ({
       <div className="max-w-7xl mx-auto px-4 lg:px-0 md:px-0">
         
         {/* Section Title */}
-        <div className="text-left mb-12 sm:mb-16 lg:mb-20 w-[30%]">
+        <div className="text-left mb-12 sm:mb-16 lg:mb-20 lg:w-[30%] md:w-[50%] w-full">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 max-w-3xl leading-tight">
             {serviceData.title}
           </h2>

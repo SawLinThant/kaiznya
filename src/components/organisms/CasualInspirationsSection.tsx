@@ -16,9 +16,10 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
           {/* Left Content */}
           <div className="lg:col-span-4 space-y-4 sm:space-y-6 order-2 lg:order-1">
             <div>
+              {/* To Do - replac */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
-                Casual<br />
-                Inspirations
+                LET THE<br />
+                SKIN BREATH
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
                 Our favorite combinations for casual<br className="hidden sm:block" />
