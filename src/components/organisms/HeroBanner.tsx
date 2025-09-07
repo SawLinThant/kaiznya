@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Button } from '@/components';
 import { cn } from '@/lib/utils';
+import { useBannerSlides } from '@/hooks/useCDNData';
 
 interface HeroBannerProps {
   dict?: any;
@@ -10,8 +11,38 @@ interface HeroBannerProps {
 }
 
 const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
-  // Slider data
-  const slides = [
+  // Fetch banner slides from CDN
+  const { data: cdnSlides, isLoading, error } = useBannerSlides();
+  
+  // Add a timeout to prevent endless loading
+  const [useFallback, setUseFallback] = useState(false);
+
+  // Debug CDN fetch
+  React.useEffect(() => {
+    console.log('=== HeroBanner CDN Debug ===');
+    console.log('CDN Slides:', cdnSlides);
+    console.log('Is Loading:', isLoading);
+    console.log('Error:', error);
+    console.log('Use Fallback:', useFallback);
+    console.log('CDN Base URL:', process.env.NEXT_PUBLIC_CDN_BASE_URL || 'https://cdn.kanaiya.shop');
+    console.log('Full URL:', `${process.env.NEXT_PUBLIC_CDN_BASE_URL || 'https://cdn.kanaiya.shop'}/banner/banner.json`);
+    console.log('========================');
+  }, [cdnSlides, isLoading, error, useFallback]);
+
+  // Set a timeout to use fallback data if CDN takes too long
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (isLoading && !cdnSlides) {
+        console.log('CDN timeout - using fallback data');
+        setUseFallback(true);
+      }
+    }, 5000); // 5 second timeout
+
+    return () => clearTimeout(timeout);
+  }, [isLoading, cdnSlides]);
+
+  // Fallback slides in case CDN data is not available
+  const fallbackSlides = [
     {
       id: 1,
       title: "Natural\nSkin\nCare",
@@ -25,7 +56,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
       title: "Face\nSerum\nCollection",
       description: "Discover our premium\nface serums for radiant skin",
       buttonText: "EXPLORE SERUMS",
-      backgroundImage: "https://cdn.kanaiya.shop/pics/banner/banner2.jpg",
+      backgroundImage: "https://cdn.kanaiya.shop/pics/faceserum/BlueSerum1.png",
       backgroundColor: "#6B73FF"
     },
     {
@@ -33,10 +64,40 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
       title: "Hair\nCare\nEssentials",
       description: "Nourishing hair treatments\nfor beautiful, healthy hair",
       buttonText: "SHOP HAIR CARE",
-      backgroundImage: "https://cdn.kanaiya.shop/pics/banner/banner3.jpg",
+      backgroundImage: "https://cdn.kanaiya.shop/pics/banner/banner2.jpg",
       backgroundColor: "#FF6B6B"
     }
   ];
+
+  // Use CDN data if available, otherwise use fallback
+  const slides = useMemo(() => {
+    console.log('=== HeroBanner CDN Data ===');
+    console.log('CDN Slides:', cdnSlides);
+    console.log('Is Loading:', isLoading);
+    console.log('Error:', error);
+    console.log('Use Fallback:', useFallback);
+    
+    // Use fallback if timeout occurred or if there's an error
+    if (useFallback || error || !cdnSlides || cdnSlides.length === 0) {
+      console.log('Using fallback slides data');
+      return fallbackSlides;
+    }
+    
+    if (cdnSlides && cdnSlides.length > 0) {
+      console.log('Using CDN slides data');
+      return cdnSlides.map((slide: any, index: number) => ({
+        id: slide.id || index + 1,
+        title: slide.title || slide.name || `Slide ${index + 1}`,
+        description: slide.description || slide.subtitle || `Description for slide ${index + 1}`,
+        buttonText: slide.buttonText || slide.buttonLabel || "LEARN MORE",
+        backgroundImage: slide.backgroundImage || slide.image || slide.imageSrc || "https://cdn.kanaiya.shop/pics/banner/banner1.jpg",
+        backgroundColor: slide.backgroundColor || slide.color || "#9CA986"
+      }));
+    }
+    
+    console.log('Using fallback slides data (default)');
+    return fallbackSlides;
+  }, [cdnSlides, isLoading, error, useFallback]);
 
   // Slider state
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,6 +130,38 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
   // Pause auto-play on hover
   const handleMouseEnter = () => setIsAutoPlaying(false);
   const handleMouseLeave = () => setIsAutoPlaying(true);
+
+  // Loading state
+  if (isLoading && !useFallback) {
+    return (
+      <section className={cn("relative overflow-hidden", className)}>
+        <div className="max-w-7xl mx-auto pt-4 pb-[0.5rem] px-4 lg:px-0 md:px-0">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-2 min-h-[550px] sm:min-h-[500px]">
+            <div className="lg:col-span-9 relative order-1 lg:order-1 min-h-[600px]">
+              <div className="relative h-full min-h-[350px] sm:min-h-[400px] overflow-hidden bg-gray-200 animate-pulse" style={{ borderRadius: '2rem' }}>
+                <div className="flex items-center justify-center h-full">
+                  <div className="text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto mb-4"></div>
+                    <p className="text-gray-600">Loading banner slides...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-3 space-y-4 lg:space-y-2 order-2 lg:order-2">
+              <div className="relative h-[320px] sm:h-[350px] overflow-hidden bg-gray-200 animate-pulse" style={{ borderRadius: '2rem' }}></div>
+              <div className="relative h-[320px] sm:h-[350px] overflow-hidden bg-gray-200 animate-pulse" style={{ borderRadius: '2rem' }}></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Error state
+  if (error) {
+    console.error('Banner slides error:', error);
+    // Continue with fallback slides
+  }
 
   return (
     <section className={cn("relative overflow-hidden", className)}>
@@ -108,7 +201,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
                       <div className="relative z-10 h-full flex items-center">
                         <div className="px-6 sm:px-8 lg:px-12 max-w-full sm:max-w-md absolute top-8">
                           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                            {slide.title.split('\n').map((line, lineIndex) => (
+                            {slide.title.split('\n').map((line: string, lineIndex: number) => (
                               <React.Fragment key={lineIndex}>
                                 {line}
                                 {lineIndex < slide.title.split('\n').length - 1 && <br />}
@@ -116,7 +209,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
                             ))}
                           </h1>
                           <p className="text-white/90 text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed">
-                            {slide.description.split('\n').map((line, lineIndex) => (
+                            {slide.description.split('\n').map((line: string, lineIndex: number) => (
                               <React.Fragment key={lineIndex}>
                                 {line}
                                 {lineIndex < slide.description.split('\n').length - 1 && <br className="hidden sm:block" />}
@@ -135,14 +228,14 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
                         </div>
                         
                         {/* Decorative white line */}
-                        <div className="absolute right-0 top-0 h-full w-2/5 sm:w-1/2 lg:w-3/5">
+                        {/* <div className="absolute right-0 top-0 h-full w-2/5 sm:w-1/2 lg:w-3/5">
                           <div className="relative h-full">
                             <div 
                               className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -rotate-12 w-12 sm:w-16 lg:w-24 h-0.5 sm:h-1 bg-white/60"
                               style={{ transformOrigin: 'center' }}
                             ></div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -228,7 +321,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
               <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 drop-shadow-lg">
-                    Hair<br />Care
+                    Creampact
                   </h3>
                 </div>
               </div>

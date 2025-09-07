@@ -100,8 +100,12 @@ export class CategoryTransformer {
   }
 
   static buildCategoryTree(categories: ProductCategory[]) {
-    const categoryMap = new Map(categories.map(cat => [cat.id, { ...cat, children: [] }]));
-    const rootCategories: any[] = [];
+    type CategoryNode = ProductCategory & { children: CategoryNode[] };
+    
+    const categoryMap = new Map<string, CategoryNode>(
+      categories.map(cat => [cat.id, { ...cat, children: [] }])
+    );
+    const rootCategories: CategoryNode[] = [];
 
     categories.forEach(category => {
       const categoryNode = categoryMap.get(category.id)!;

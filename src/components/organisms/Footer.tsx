@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           </div>
 
           {/* Right Link Columns */}
-          <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <h4 className="text-sm font-semibold text-gray-300 tracking-widest mb-4">POPULAR</h4>
               <ul className="space-y-2 text-sm text-gray-300">
@@ -57,6 +57,61 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 <li>About Us</li>
                 <li>Contact Us</li>
                 <li>Terms and Conditions</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-300 tracking-widest mb-4">FOLLOW US</h4>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>
+                  <a 
+                    href="https://facebook.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://instagram.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://tiktok.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    TikTok
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://youtube.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    YouTube
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://twitter.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    Twitter
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

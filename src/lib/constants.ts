@@ -60,9 +60,10 @@ export const CDN_ENDPOINTS = {
   FEATURED_COLLECTIONS: '/kanaiya_json/collections/featured.json',
   
   // Banner/Slider endpoints
-  BANNERS: '/kanaiya_json/banners/banners.json',
-  BANNER_SLIDES: '/kanaiya_json/banners/slides.json',
-  HERO_BANNERS: '/kanaiya_json/banners/hero.json',
+  BANNERS: '/kanaiya_json/banner/banner.json',
+  BANNER_SLIDES: '/kanaiya_json/banner/slides.json',
+  HERO_BANNERS: '/kanaiya_json/banner/hero.json',
+  BANNER_JSON: '/kanaiya_json/blog/posts/featured.json',
   
   // Blog/Content endpoints
   BLOG_POSTS: '/kanaiya_json/blog/posts.json',

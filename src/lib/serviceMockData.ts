@@ -4,19 +4,19 @@ export const mockServiceFeatures: ServiceFeature[] = [
   {
     id: 'take-care-with-love',
     title: 'Take care with love',
-    description: 'We take care your package with full of attention and of course full of love. We want to make sure you\'ll receive your package like you receive your birthday gift.',
+    description: 'We take care of your package with full attention and ensure it\'s fresh and secure. We want to make sure you receive your skincare like a personalized gift.',
     icon: 'heart',
   },
   {
     id: 'friendly-customer-service',
     title: 'Friendly Customer Service',
-    description: 'You do not need to worry when you want to check your package. We will always answer whatever your questions. Just click on the chat icon and we will talk.',
+    description: 'You do not need to worry when you want to check your order or ask about ingredients. We will always answer whatever your questions. Just click on the chat icon and we will talk.',
     icon: 'phone',
   },
   {
     id: 'refund-process',
     title: 'Refund Process',
-    description: 'Refund is a such bad experience and we don\'t want that thing happen to you. But when it\'s happen we will make sure you will through smooth and friendly process.',
+    description: 'Refund is a such bad experience and we don\'t want that to happen to you. But when it\'s happened, we will make sure you through smooth and friendly process.',
     icon: 'refresh',
   },
 ];

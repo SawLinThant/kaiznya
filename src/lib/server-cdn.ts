@@ -1,4 +1,4 @@
-import { cdnFetcher } from './cdn-fetcher';
+import { cdnFetcher, cdnUtils } from './cdn-fetcher';
 import { CDN_ENDPOINTS } from './constants';
 import type { 
   Product, 
@@ -17,7 +17,7 @@ export class ServerCDNFetcher {
   // Product data fetching
   static async getProducts(filters?: ProductFilters): Promise<Product[]> {
     try {
-      const queryString = filters ? cdnFetcher.buildQueryString(filters) : '';
+      const queryString = filters ? cdnUtils.buildQueryString(filters) : '';
       const endpoint = `${CDN_ENDPOINTS.PRODUCTS}${queryString}`;
       
       return await cdnFetcher.fetch<Product[]>(endpoint, {
@@ -76,7 +76,7 @@ export class ServerCDNFetcher {
 
   static async searchProducts(query: SearchQuery): Promise<PaginatedResponse<Product>> {
     try {
-      const queryString = cdnFetcher.buildQueryString(query);
+      const queryString = cdnUtils.buildQueryString(query);
       const endpoint = `${CDN_ENDPOINTS.PRODUCTS_SEARCH}${queryString}`;
       
       return await cdnFetcher.fetch<PaginatedResponse<Product>>(endpoint, {
@@ -356,7 +356,7 @@ export class ServerCDNFetcher {
   // SEO data fetching
   static async getSEOData(page: string, params?: Record<string, any>) {
     try {
-      const queryString = params ? cdnFetcher.buildQueryString(params) : '';
+      const queryString = params ? cdnUtils.buildQueryString(params) : '';
       const endpoint = `${CDN_ENDPOINTS.SEO_DATA}/${page}${queryString}`;
       
       return await cdnFetcher.fetch<any>(endpoint, {

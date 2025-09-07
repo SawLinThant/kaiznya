@@ -98,9 +98,9 @@ export const mockProperties: Property[] = [
 export const mockBlogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Choose the right property!',
-    description: 'Learn how to select the perfect property for your needs.',
-    image: '/api/placeholder/300/200',
+    title: 'Choose the Right Skincare Routine!',
+    description: 'Learn how to select the perfect products for your skin type and needs.',
+    image: 'https://cdn.kanaiya.shop/pics/blog/blog1.png',
     wordCount: 200
   },
   {

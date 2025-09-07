@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { cdnFetcher, CDNFetchError, cdnUtils } from '@/lib/cdn-fetcher';
 import { CDN_ENDPOINTS } from '@/lib/constants';
 import type { 
@@ -41,11 +41,13 @@ export function useCDNData<T>(
   const [error, setError] = useState<CDNFetchError | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isValidating, setIsValidating] = useState(false);
+  const hasFetched = React.useRef(false);
 
   const fetchData = useCallback(async () => {
-    if (!enabled) return;
+    if (!enabled || hasFetched.current) return;
 
     try {
+      hasFetched.current = true;
       setIsLoading(true);
       setError(null);
 
@@ -67,7 +69,7 @@ export function useCDNData<T>(
     } finally {
       setIsLoading(false);
     }
-  }, [endpoint, enabled, cache, shouldRevalidate, tags, cacheConfig]);
+  }, [endpoint, enabled, cache, shouldRevalidate, tags, cacheConfig.ttl, cacheConfig.staleWhileRevalidate]);
 
   const revalidate = useCallback(async () => {
     if (!enabled) return;
@@ -94,7 +96,7 @@ export function useCDNData<T>(
     } finally {
       setIsValidating(false);
     }
-  }, [endpoint, enabled, cache, tags, cacheConfig]);
+  }, [endpoint, enabled, cache, tags, cacheConfig.ttl, cacheConfig.staleWhileRevalidate]);
 
   useEffect(() => {
     fetchData();
@@ -212,9 +214,10 @@ export function useFeaturedCollections() {
 
 // Banner hooks
 export function useBannerSlides() {
-  return useCDNData<BannerSlide[]>(CDN_ENDPOINTS.BANNER_SLIDES, {
+  return useCDNData<BannerSlide[]>(CDN_ENDPOINTS.BANNER_JSON, {
     tags: ['banners', 'slides'],
     cacheConfig: { ttl: 300 }, // 5 minutes
+    enabled: true, // Explicitly enable
   });
 }
 
