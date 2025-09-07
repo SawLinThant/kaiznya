@@ -41,12 +41,12 @@ const Header: React.FC<HeaderProps> = ({ dict, className }) => {
 
             {/* Navigation Links */}
             <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
-              <Link
+              {/* <Link
                 href="/gift-cards"
                 className="text-sm min-w-[70px] font-medium text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Gift Cards
-              </Link>
+              </Link> */}
               <Link
                 href="/special-event"
                 className="text-sm font-medium min-w-[100px] text-gray-700 hover:text-gray-900 transition-colors"

@@ -24,7 +24,18 @@ export type ProductCategory =
   | 'casual-shoe'
   | 'skateboard-shoe'
   | 'basket-shoe'
-  | 'sportwear-shoe';
+  | 'sportwear-shoe'
+  | 'face-care'
+  | 'body-care'
+  | 'hair-care'
+  | 'reviews'
+  | 'face-serum'
+  | 'face-wash'
+  | 'cream-powder'
+  | 'hair-treatment'
+  | 'liquid-foundation'
+  | 'lotion'
+  | 'shower-gel';
 
 export interface ProductFilter {
   category: ProductCategory | 'all';

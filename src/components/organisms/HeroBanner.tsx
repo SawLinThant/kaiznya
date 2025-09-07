@@ -14,26 +14,26 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
   const slides = [
     {
       id: 1,
-      title: "Color of\nSummer\nOutfit",
-      description: "100+ Collections for your outfit\ninspiration in this summer",
-      buttonText: "VIEW COLLECTIONS",
-      backgroundImage: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      title: "Natural\nSkin\nCare",
+      description: "Premium skincare products\nfor healthy, glowing skin",
+      buttonText: "SHOP SKINCARE",
+      backgroundImage: "https://cdn.kanaiya.shop/pics/banner/banner1.jpg",
       backgroundColor: "#9CA986"
     },
     {
       id: 2,
-      title: "Urban\nStyle\nCollection",
-      description: "Discover modern streetwear\nfor the contemporary fashion lover",
-      buttonText: "EXPLORE URBAN",
-      backgroundImage: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      title: "Face\nSerum\nCollection",
+      description: "Discover our premium\nface serums for radiant skin",
+      buttonText: "EXPLORE SERUMS",
+      backgroundImage: "https://cdn.kanaiya.shop/pics/banner/banner2.jpg",
       backgroundColor: "#6B73FF"
     },
     {
       id: 3,
-      title: "Winter\nWarmth\nEssentials",
-      description: "Cozy and stylish pieces\nto keep you warm this season",
-      buttonText: "SHOP WINTER",
-      backgroundImage: "https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      title: "Hair\nCare\nEssentials",
+      description: "Nourishing hair treatments\nfor beautiful, healthy hair",
+      buttonText: "SHOP HAIR CARE",
+      backgroundImage: "https://cdn.kanaiya.shop/pics/banner/banner3.jpg",
       backgroundColor: "#FF6B6B"
     }
   ];
@@ -192,12 +192,13 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
           {/* replace with face serum image as feature image */}
           <div className="lg:col-span-3 space-y-4 lg:space-y-2 order-2 lg:order-2">
             
-            {/* Outdoor Active Card */}
+            {/* Face Care Card */}
             <div 
               className="relative h-[320px] sm:h-[350px] overflow-hidden bg-cover bg-center bg-no-repeat"
               style={{
                 borderRadius: '2rem',
-                backgroundImage: 'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")',
+               // backgroundImage: 'url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")',
+                backgroundImage: 'url("https://cdn.kanaiya.shop/pics/C_P/1.jpg")',
                 backgroundColor: '#E5F3FF' // Fallback color
               }}
             >
@@ -206,18 +207,19 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
               <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 drop-shadow-lg">
-                    Outdoor<br />Active
+                    Face<br />Care
                   </h3>
                 </div>
               </div>
             </div>
             
-            {/* Casual Comfort Card */}
+            {/* Hair Care Card */}
             <div 
               className="relative h-[320px] sm:h-[350px] overflow-hidden bg-cover bg-center bg-no-repeat"
               style={{
                 borderRadius: '2rem',
-                backgroundImage: 'url("https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")',
+               // backgroundImage: 'url("https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80")',
+                backgroundImage: 'url("https://cdn.kanaiya.shop/pics/C_P/1.png")',
                 backgroundColor: '#FFF5F5' // Fallback color
               }}
             >
@@ -226,7 +228,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
               <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 drop-shadow-lg">
-                    Casual<br />Comfort
+                    Hair<br />Care
                   </h3>
                 </div>
               </div>

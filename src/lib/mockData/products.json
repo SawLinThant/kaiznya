@@ -1,0 +1,527 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "title": "Face Serum",
+    "description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/face-serum",
+    "shop_endpoint": "/creampact-powder"
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "title": "Face Serum",
+    "description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/face-serum",
+    "shop_endpoint": "/creampact-powder"
+  },
+  {
+    "id": 3,
+    "category_id": 1,
+    "title": "Face Serum",
+    "description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/face-serum",
+    "shop_endpoint": "/creampact-powder"
+  },
+  {
+    "id": 4,
+    "category_id": 7,
+    "title": "Shower Gel",
+    "description": "Shower GelShower GelShower GelShower GelShower Gel",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/shower-gel",
+    "shop_endpoint": "/creampact-powder"
+  },
+  {
+    "id": 5,
+    "category_id": 2,
+    "title": "Face Wash",
+    "description": "Face WashFace WashFace WashFace WashFace Wash",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/face-wash",
+    "shop_endpoint": "/creampact-powder"
+  },
+  {
+    "id": 6,
+    "category_id": 3,
+    "title": "Creampact Powder",
+    "description": "Creampact PowderCreampact PowderCreampact PowderCreampact PowderCreampact Powder",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/creampact-powder",
+    "shop_endpoint": "/creampact-powder"
+  },
+  {
+    "id": 7,
+    "category_id": 4,
+    "title": "Hair Treatment",
+    "description": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
+    "short_description": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
+    "images": [
+      {
+        "alt": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 150,
+    "currency": "$",
+    "endpoint": "/hair-treatment",
+    "shop_endpoint": "/hair-treatment"
+  },
+  {
+    "id": 8,
+    "category_id": 6,
+    "title": "Lotion",
+    "description": "LotionLotionLotionLotionLotionLotion",
+    "short_description": "LotionLotionLotionLotionLotionLotion",
+    "images": [
+      {
+        "alt": "LotionLotionLotionLotionLotionLotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "LotionLotionLotionLotionLotionLotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 80,
+    "currency": "$",
+    "endpoint": "/lotion",
+    "shop_endpoint": "/lotion"
+  },
+  {
+    "id": 9,
+    "category_id": 2,
+    "title": "Anti-Acne Face Wash",
+    "description": "Kanaiya Anti-Acne Face Wash is gentle and effectively removes impurities and fights acne without drying your skin. The Neem & Tea Tree oil combination works wonder with the neem extract moisturizing the skin keeping it soft and removing the appearance of scars, burns and other skin blemishes. Prevents the blackheads & soothe skin irritations with blend of tea tree oil.",
+    "short_description": "Purify & Detoxify, Prevents Blackheads & Soothe, Moisturizes",
+    "images": [
+      {
+        "alt": "Anti-Acne Face Wash",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Anti-Acne Face Wash",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/anti-acne-face-wash",
+    "shop_endpoint": "/anti-acne-face-wash"
+  },
+  {
+    "id": 10,
+    "category_id": 2,
+    "title": "Whitening Face Wash",
+    "description": "Kanaiya Whitening face wash removes microbes and pollutants effectively improving complexion of the skin with glowing whitening effect. Turmeric and pearl with its antiseptic and healing properties clears any skin infections for clean and spot-less fair skin.",
+    "short_description": "Pearl Whitening, Moisturizing, Reduce pigmentation and Dark Spot",
+    "images": [
+      {
+        "alt": "Whitening Face Wash",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Whitening Face Wash",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/whitening-face-wash",
+    "shop_endpoint": "/whitening-face-wash"
+  },
+  {
+    "id": 11,
+    "category_id": 2,
+    "title": "Anti-Aging Face Wash",
+    "description": "Kanaiya Anti Aging face wash ensures gentle and effective deep cleansing that naturally whitens the skin, reduce acnes and fine lines. The Kiwi & Banana extracts are powerful anti-oxidants that nourish, moisturize, smoothen, brighten and exfoliate skin to give flawless skin.",
+    "short_description": "Anti-Oxidants, Nourishes & Moisturizes, Brightens & Regeneration of new skin Cells",
+    "images": [
+      {
+        "alt": "Anti-Aging Face Wash",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Anti-Aging Face Wash",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/anti-aging-face-wash",
+    "shop_endpoint": "/anti-aging-face-wash"
+  },
+  {
+    "id": 12,
+    "category_id": 5,
+    "title": "Perfecting Liquid Foundation",
+    "description": "Create a long-lasting flawless base with Kanaiya Liquid Foundation for oily Skin. An oil-free liquid foundation that delivers high coverage with a comfortable matte finish. The skin-balancing foundation seamlessly creates a smoother-looking, more even-toned complexion while controlling oil and shine to leave skin looking mattified. Delivers natural-looking colour and SPF 35++ for protection against external aggressors.",
+    "short_description": "Oily Face Care, SPF 35++, 30ml",
+    "images": [
+      {
+        "alt": "Perfecting Liquid Foundation",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Perfecting Liquid Foundation",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 120,
+    "currency": "$",
+    "endpoint": "/perfecting-liquid-foundation",
+    "shop_endpoint": "/perfecting-liquid-foundation"
+  },
+  {
+    "id": 13,
+    "category_id": 5,
+    "title": "High Definition Liquid Foundation",
+    "description": "Perfect the complexion with Kanaiya Liquid Foundation with SPF 35++. A high definition foundation offers essential protection as well as coverage, which is ideal for dry or combination skin. This foundation moisturises and hydrates skin, whilst delivering long-wearing, full-coverage colour that won't feel heavy, cakey or greasy. Skin looks radiant and photo-ready with a streak-free finish.",
+    "short_description": "Dry Face Care, SPF 35++, 30ml",
+    "images": [
+      {
+        "alt": "High Definition Liquid Foundation",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "High Definition Liquid Foundation",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 120,
+    "currency": "$",
+    "endpoint": "/high-definition-liquid-foundation",
+    "shop_endpoint": "/high-definition-liquid-foundation"
+  },
+  {
+    "id": 14,
+    "category_id": 5,
+    "title": "Nourishing Liquid Foundation",
+    "description": "Smooth and perfect the look of your complexion with anti-ageing and ultra –hydrating Kanaiya Liquid Foundation. Refreshes tired skin and restores a natural, healthy glow. Blends seamlessly onto the face to deliver long-wearing light-reflecting colour with a super smooth finish and SPF 35++ protection.",
+    "short_description": "Age Defying (40+ Age), SPF 35++, 30ml",
+    "images": [
+      {
+        "alt": "Nourishing Liquid Foundation",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Nourishing Liquid Foundation",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 120,
+    "currency": "$",
+    "endpoint": "/nourishing-liquid-foundation",
+    "shop_endpoint": "/nourishing-liquid-foundation"
+  },
+  {
+    "id": 15,
+    "category_id": 3,
+    "title": "Oil Control Powder",
+    "description": "Kanaiya Oil Control Powder with SPF 20 provides an ultra-fine, sheer veil of color to even skin tone. Whisper light, oil free powder to set makeup in a sheer luminous finish. Won't settle in fine lines.",
+    "short_description": "Perfect coverage, Smooth & silky",
+    "images": [
+      {
+        "alt": "Oil Control Powder",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Oil Control Powder",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 80,
+    "currency": "$",
+    "endpoint": "/oil-control-powder",
+    "shop_endpoint": "/oil-control-powder"
+  },
+  {
+    "id": 16,
+    "category_id": 3,
+    "title": "2-Way Cake Powder",
+    "description": "Kanaiya Two Way Cake Powder has been formulated with the rich, soothing, moisturizing ingredients that provide all day coverage. It contains the coverage of a liquid foundation and the setting properties of a powder in one easy step. Apply wet or dry for a soft, natural looking finish.",
+    "short_description": "Sheen & smooth, Natural luminosity",
+    "images": [
+      {
+        "alt": "2-Way Cake Powder",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "2-Way Cake Powder",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 80,
+    "currency": "$",
+    "endpoint": "/2-way-cake-powder",
+    "shop_endpoint": "/2-way-cake-powder"
+  },
+  {
+    "id": 17,
+    "category_id": 6,
+    "title": "Sakura Lotion",
+    "description": "Kanaiya Body Lotion enriched with Sakura Extract, known to lighten and give glowing pinkish white skin tone. Formulated in a fast-absorbing and non-sticky texture that makes your skin feel soft, supple and intensely nourished all day long.",
+    "short_description": "Normal to Dry Skin, For Silky, Beautiful Skin",
+    "images": [
+      {
+        "alt": "Sakura Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Sakura Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 90,
+    "currency": "$",
+    "endpoint": "/sakura-lotion",
+    "shop_endpoint": "/sakura-lotion"
+  },
+  {
+    "id": 18,
+    "category_id": 6,
+    "title": "Gluta Lotion",
+    "description": "Kanaiya body lotion Collagen Gluta moisturizes skin, looks firmer and naturally white with radiant technology that combines Collagen and Glutathione. Glutathione improves overall complexion making brighter skin tone. Collagen eliminates wrinkles and strengthens skin by increasing hydration. This luxurious body lotion will leave your skin perfectly bright, white, and smooth.",
+    "short_description": "Intensive White Body Lotion, Soft & Smooth",
+    "images": [
+      {
+        "alt": "Gluta Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Gluta Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 90,
+    "currency": "$",
+    "endpoint": "/gluta-lotion",
+    "shop_endpoint": "/gluta-lotion"
+  },
+  {
+    "id": 19,
+    "category_id": 6,
+    "title": "Lemongrass Lotion",
+    "description": "A gentle lightweight and easily absorbed moisturizing lotion to help soften and soothe your skin. Infused with Lemongrass extract to leave your skin smelling beautiful and feeling revitalized. Nourishes the skin for a supple and soft finish.",
+    "short_description": "Naturally Moisturizing, Softens and Absorbs",
+    "images": [
+      {
+        "alt": "Lemongrass Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Lemongrass Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 90,
+    "currency": "$",
+    "endpoint": "/lemongrass-lotion",
+    "shop_endpoint": "/lemongrass-lotion"
+  },
+  {
+    "id": 20,
+    "category_id": 6,
+    "title": "Rose Milk Lotion",
+    "description": "Give your skin an extra special nourishing treat with Kanaiya Body Lotion Rose Milk. This wonderfully floral, lubricating formula naturally enrich and hydrate dry skin. This cream is quick to absorb and will not leave you feeling sticky. It is also lightweight and smooth as milk! You can use this lotion any time, whether after a relaxing shower, throughout the day or before bed.",
+    "short_description": "Delicious Glow, For Luminous & Soft Skin",
+    "images": [
+      {
+        "alt": "Rose Milk Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Rose Milk Lotion",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 90,
+    "currency": "$",
+    "endpoint": "/rose-milk-lotion",
+    "shop_endpoint": "/rose-milk-lotion"
+  },
+  {
+    "id": 21,
+    "category_id": 7,
+    "title": "Peach And Marigold Shower Gel",
+    "description": "Superbly soft shower gel gives instant nourishment to the skin. Enriched with Marigold extract and scent of Peach works synergistically to provide you with the ultimate relaxation and rejuvenates for the entire day. Tightens your skin Dire and blemish free giving gorgeous look!",
+    "short_description": "Peach And Marigold, Superbly soft shower gel",
+    "images": [
+      {
+        "alt": "Peach And Marigold Shower Gel",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Peach And Marigold Shower Gel",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 85,
+    "currency": "$",
+    "endpoint": "/peach-marigold-shower-gel",
+    "shop_endpoint": "/peach-marigold-shower-gel"
+  },
+  {
+    "id": 22,
+    "category_id": 7,
+    "title": "Rice And Yogurt Shower Gel",
+    "description": "Superbly soft shower gel gives instant nourishment to the skin. Enriched with moisturizing and brightening power from Rice and Yogurt that works synergistically to provide you with the ultimate moisturization to leave your skin brightening and glowing. Collagen helps to increase elasticity and hydration to keep skin young.",
+    "short_description": "Rice And Yogurt, Superbly soft shower gel",
+    "images": [
+      {
+        "alt": "Rice And Yogurt Shower Gel",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Rice And Yogurt Shower Gel",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 85,
+    "currency": "$",
+    "endpoint": "/rice-yogurt-shower-gel",
+    "shop_endpoint": "/rice-yogurt-shower-gel"
+  },
+  {
+    "id": 23,
+    "category_id": 7,
+    "title": "Mixed Fruits Shower Gel",
+    "description": "Superbly soft shower gel gives instant nourishment to the skin. Enriched with multi vitamin fruits along with collagen helps to keep your skin anani groven hydration.",
+    "short_description": "Mixed Fruits, Superbly soft shower gel",
+    "images": [
+      {
+        "alt": "Mixed Fruits Shower Gel",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Mixed Fruits Shower Gel",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 85,
+    "currency": "$",
+    "endpoint": "/mixed-fruits-shower-gel",
+    "shop_endpoint": "/mixed-fruits-shower-gel"
+  },
+  {
+    "id": 24,
+    "category_id": 1,
+    "title": "Retinol + Hyaluron Face Serum",
+    "description": "Kanaiya Retinol + Hyaluron Age Refining Face Serum helps your skin look smoother and more radiant giving your skin a fresher, plump appearance. The skin gradually restores firmness and corrects the signs of aging, deep wrinkles, thin lines and uneven skin tone. Hyaluron reduces skin wrinkles and fine lines, whereas Collagen keeps skin soft and smooth with its highly hydrating properties. This serum easily absorbs into skin giving flawless and youthful looks to your skin.",
+    "short_description": "Age Refining Face Serum, Retinol + Hyaluron",
+    "images": [
+      {
+        "alt": "Retinol + Hyaluron Face Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Retinol + Hyaluron Face Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 150,
+    "currency": "$",
+    "endpoint": "/retinol-hyaluron-face-serum",
+    "shop_endpoint": "/retinol-hyaluron-face-serum"
+  },
+  {
+    "id": 25,
+    "category_id": 1,
+    "title": "Vitamin C + B5 Face Serum",
+    "description": "Kanaiya Vit C + B5 Brightening & Anti-Wrinkle Face Serum will get your natural glow back with brightening Vitamin C. The Collagen combined with B5 keeps skin soft, smooth and healthy. Energizes tired skin and restore a fresher complexion. This light serum melts into the skin whilst smoothing and hydrating to balance and prime your skin.",
+    "short_description": "Brightening & Anti-Wrinkle Face Serum, Vitamin C + B5",
+    "images": [
+      {
+        "alt": "Vitamin C + B5 Face Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      },
+      {
+        "alt": "Vitamin C + B5 Face Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+      }
+    ],
+    "price": 150,
+    "currency": "$",
+    "endpoint": "/vitamin-c-b5-face-serum",
+    "shop_endpoint": "/vitamin-c-b5-face-serum"
+  }
+]

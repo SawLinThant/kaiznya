@@ -31,13 +31,15 @@ const Navigation: React.FC<NavigationProps> = ({ locale, dict }) => {
   return (
     <nav className="bg-white border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex-shrink-0">
-              <span className="text-xl font-bold text-gray-900">
-                {dict?.navigation?.logo || 'kanaiya'}
-              </span>
+              <img 
+                src="/images/logo.jpg" 
+                alt={dict?.navigation?.logo || 'Kanaiya'} 
+                className="h-14 w-auto object-contain"
+              />
             </Link>
           </div>
 

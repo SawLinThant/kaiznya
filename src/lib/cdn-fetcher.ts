@@ -2,7 +2,7 @@ import { CDNResponse, CDNError, CacheConfig, CacheEntry } from '@/types/cdn';
 
 // CDN Configuration
 export const CDN_CONFIG = {
-  BASE_URL: process.env.NEXT_PUBLIC_CDN_BASE_URL || 'https://cdn.example.com/api',
+  BASE_URL: process.env.NEXT_PUBLIC_CDN_BASE_URL || 'https://cdn.kanaiya.shop',
   TIMEOUT: 10000,
   RETRY_ATTEMPTS: 3,
   RETRY_DELAY: 1000,
@@ -202,18 +202,24 @@ export class CDNFetcher {
           );
         }
 
-        const data: CDNResponse<T> = await response.json();
+        const data = await response.json();
 
-        if (!data.success) {
-          throw new CDNFetchError(
-            data.message || 'Unknown error from CDN',
-            'CDN_ERROR',
-            undefined,
-            data
-          );
+        // Handle both wrapped and raw JSON responses
+        if (data && typeof data === 'object' && 'success' in data) {
+          // Wrapped response format: {success: true, data: ...}
+          if (!data.success) {
+            throw new CDNFetchError(
+              data.message || 'Unknown error from CDN',
+              'CDN_ERROR',
+              undefined,
+              data
+            );
+          }
+          return data.data;
+        } else {
+          // Raw JSON response (like your products array)
+          return data as T;
         }
-
-        return data.data;
       } catch (error) {
         clearTimeout(timeoutId);
         

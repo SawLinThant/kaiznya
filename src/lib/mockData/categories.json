@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Face Serum",
+    "description": "Face Serum products for healthy skin",
+    "alt": "Face Serum products for healthy skin",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/face-serum"
+  },
+  {
+    "id": 2,
+    "title": "Face Wash",
+    "description": "Face Wash products for healthy skin",
+    "alt": "Face Wash products for healthy skin",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/face-wash"
+  },
+  {
+    "id": 3,
+    "title": "Cream Powder",
+    "description": "Cream Powder products for healthy skin",
+    "alt": "Cream Powder products for healthy skin",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/cream-powder"
+  },
+  {
+    "id": 4,
+    "title": "Hair Treatment",
+    "description": "Hair Treatment products for healthy hair",
+    "alt": "Hair Treatment products for healthy hair",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/hair-treatment"
+  },
+  {
+    "id": 5,
+    "title": "Liquid Foundation",
+    "description": "Liquid Foundation products for healthy skin",
+    "alt": "Liquid Foundation products for healthy skin",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/liquid-foundation"
+  },
+  {
+    "id": 6,
+    "title": "Lotion",
+    "description": "Lotion products for healthy skin",
+    "alt": "Lotion products for healthy skin",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/lotion"
+  },
+  {
+    "id": 7,
+    "title": "Shower Gel",
+    "description": "Shower Gel products for healthy skin",
+    "alt": "Shower Gel products for healthy skin",
+    "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg",
+    "endpoint": "/shower-gel"
+  }
+]

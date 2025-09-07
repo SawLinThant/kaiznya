@@ -42,49 +42,49 @@ export const API_ENDPOINTS = {
 // CDN Endpoints
 export const CDN_ENDPOINTS = {
   // Product endpoints
-  PRODUCTS: '/products',
-  PRODUCT_DETAIL: (slug: string) => `/products/${slug}`,
-  PRODUCTS_BY_CATEGORY: (category: string) => `/products/category/${category}`,
-  PRODUCTS_SEARCH: '/products/search',
-  FEATURED_PRODUCTS: '/products/featured',
-  RELATED_PRODUCTS: (productId: string) => `/products/${productId}/related`,
+  PRODUCTS: '/kanaiya_json/products/products.json',
+  PRODUCT_DETAIL: (slug: string) => `/kanaiya_json/products/${slug}.json`,
+  PRODUCTS_BY_CATEGORY: (category: string) => `/kanaiya_json/products/category/${category}.json`,
+  PRODUCTS_SEARCH: '/kanaiya_json/products/search.json',
+  FEATURED_PRODUCTS: '/kanaiya_json/products/featured.json',
+  RELATED_PRODUCTS: (productId: string) => `/kanaiya_json/products/${productId}/related.json`,
   
   // Category endpoints
-  CATEGORIES: '/categories',
-  CATEGORY_DETAIL: (slug: string) => `/categories/${slug}`,
-  CATEGORY_TREE: '/categories/tree',
+  CATEGORIES: '/kanaiya_json/category/category.json',
+  CATEGORY_DETAIL: (slug: string) => `/kanaiya_json/category/${slug}.json`,
+  CATEGORY_TREE: '/kanaiya_json/category/tree.json',
   
   // Collection endpoints
-  COLLECTIONS: '/collections',
-  COLLECTION_DETAIL: (slug: string) => `/collections/${slug}`,
-  FEATURED_COLLECTIONS: '/collections/featured',
+  COLLECTIONS: '/kanaiya_json/collection/collection.json',
+  COLLECTION_DETAIL: (slug: string) => `/kanaiya_json/collection/${slug}.json`,
+  FEATURED_COLLECTIONS: '/kanaiya_json/collections/featured.json',
   
   // Banner/Slider endpoints
-  BANNERS: '/banners',
-  BANNER_SLIDES: '/banners/slides',
-  HERO_BANNERS: '/banners/hero',
+  BANNERS: '/kanaiya_json/banners/banners.json',
+  BANNER_SLIDES: '/kanaiya_json/banners/slides.json',
+  HERO_BANNERS: '/kanaiya_json/banners/hero.json',
   
   // Blog/Content endpoints
-  BLOG_POSTS: '/blog/posts',
-  BLOG_POST_DETAIL: (slug: string) => `/blog/posts/${slug}`,
-  BLOG_CATEGORIES: '/blog/categories',
-  BLOG_TAGS: '/blog/tags',
-  FEATURED_POSTS: '/blog/posts/featured',
+  BLOG_POSTS: '/kanaiya_json/blog/posts.json',
+  BLOG_POST_DETAIL: (slug: string) => `/kanaiya_json/blog/posts/${slug}.json`,
+  BLOG_CATEGORIES: '/kanaiya_json/blog/categories.json',
+  BLOG_TAGS: '/kanaiya_json/blog/tags.json',
+  FEATURED_POSTS: '/kanaiya_json/blog/posts/featured.json',
   
   // Company/About endpoints
-  COMPANY_INFO: '/company/info',
-  CONTACT_INFO: '/company/contact',
-  TEAM_MEMBERS: '/company/team',
+  COMPANY_INFO: '/kanaiya_json/company/info.json',
+  CONTACT_INFO: '/kanaiya_json/company/contact.json',
+  TEAM_MEMBERS: '/kanaiya_json/company/team.json',
   
   // SEO endpoints
-  SEO_DATA: '/seo',
-  SITEMAP: '/sitemap',
-  ROBOTS: '/robots.txt',
+  SEO_DATA: '/kanaiya_json/seo/seo.json',
+  SITEMAP: '/kanaiya_json/seo/sitemap.json',
+  ROBOTS: '/kanaiya_json/seo/robots.txt',
   
   // Utility endpoints
-  HEALTH_CHECK: '/health',
-  VERSION: '/version',
-  CONFIG: '/config',
+  HEALTH_CHECK: '/kanaiya_json/health.json',
+  VERSION: '/kanaiya_json/version.json',
+  CONFIG: '/kanaiya_json/config.json',
 } as const;
 
 // Room status constants

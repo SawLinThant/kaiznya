@@ -18,20 +18,20 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
             <div>
               {/* To Do - replac */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight">
-                LET THE<br />
-                SKIN BREATH
+                NATURAL<br />
+                BEAUTY
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
-                Our favorite combinations for casual<br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>outfit that can inspire you to apply on<br className="hidden sm:block" />
-                <span className="sm:hidden"> </span>your daily activity.
+                Our premium skincare products<br className="hidden sm:block" />
+                <span className="sm:hidden"> </span>for healthy, glowing skin that<br className="hidden sm:block" />
+                <span className="sm:hidden"> </span>inspires confidence every day.
               </p>
               <Button 
                 variant="outline" 
                 size="lg"
                 className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 text-sm sm:text-base"
               >
-                BROWSE INSPIRATIONS
+                SHOP SKINCARE
               </Button>
             </div>
           </div>
@@ -40,12 +40,13 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
           <div className="lg:col-span-8 order-1 lg:order-2">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-2">
               
-              {/* Say it with Shirt Card */}
+              {/* Face Serum Card */}
               <div 
                 className="relative h-64 sm:h-80 rounded-[2rem] overflow-hidden bg-cover bg-center"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1520975930151-35ddd1a1ab64?q=80&w=1200&auto=format&fit=crop)',
-                  backgroundColor: '#FEEBC8'
+                 // backgroundImage: 'url(https://images.unsplash.com/photo-1520975930151-35ddd1a1ab64?q=80&w=1200&auto=format&fit=crop)',
+                 backgroundImage: 'url("https://cdn.kanaiya.shop/pics/faceserum/Serums.jpg")', 
+                 backgroundColor: '#FEEBC8'
                 }}
               >
                 <div className="absolute inset-0 p-4 sm:p-6 flex flex-col justify-between bg-black/0">
@@ -54,8 +55,8 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
                   <div className="flex items-end justify-between">
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
-                        Say it<br />
-                        with Shirt
+                        Face<br />
+                        Serum
                       </h3>
                     </div>
                     <button className="p-1.5 sm:p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors -rotate-45">
@@ -67,12 +68,13 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
                 </div>
               </div>
               
-              {/* Funky never get old Card */}
+              {/* Hair Treatment Card */}
               <div 
                 className="relative h-64 sm:h-80 rounded-[2rem] overflow-hidden bg-cover bg-center"
                 style={{
-                  backgroundImage: 'url(https://images.unsplash.com/photo-1508909493957-8701da3c31c5?q=80&w=1200&auto=format&fit=crop)',
-                  backgroundColor: '#1F2937'
+                 // backgroundImage: 'url(https://images.unsplash.com/photo-1508909493957-8701da3c31c5?q=80&w=1200&auto=format&fit=crop)',
+                  backgroundImage: 'url("https://cdn.kanaiya.shop/pics/Shower Gel/HairTreatment/HairTreatment.png")',  
+                 backgroundColor: '#1F2937'
                 }}
               >
                 <div className="absolute inset-0 p-4 sm:p-6 flex flex-col justify-between bg-black/20">
@@ -81,8 +83,8 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
                   <div className="flex items-end justify-between">
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">
-                        Funky never<br />
-                        get old
+                        Hair<br />
+                        Treatment
                       </h3>
                     </div>
                     <button className="p-1.5 sm:p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors -rotate-45">
