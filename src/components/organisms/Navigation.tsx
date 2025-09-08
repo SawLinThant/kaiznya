@@ -81,7 +81,7 @@ const Navigation: React.FC<NavigationProps> = ({ locale, dict }) => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center justify-center">
             <button
               onClick={toggleMobileMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
@@ -120,14 +120,14 @@ const Navigation: React.FC<NavigationProps> = ({ locale, dict }) => {
               key={item.href}
               href={item.href}
               onClick={closeMobileMenu}
-              className={`block px-3 py-2 rounded-md text-base font-medium transition-colors`}
+              className={`block px-3 py-2 text-black rounded-md text-base font-medium transition-colors`}
             >
               {item.label}
             </Link>
           ))}
           
           {/* Mobile Language Switcher */}
-          <div className="px-3 py-2">
+          {/* <div className="px-3 py-2">
             <div className="flex items-center space-x-2">
               <span className="text-sm font-medium text-gray-500">Language:</span>
               <Link
@@ -151,7 +151,7 @@ const Navigation: React.FC<NavigationProps> = ({ locale, dict }) => {
                 MY
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

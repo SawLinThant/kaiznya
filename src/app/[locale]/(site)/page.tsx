@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
   const dict = await getDictionary(locale);
 
   return {
-    title: 'Hotel Management System - Find Your Perfect Property',
+    title: 'Kanaiya - Find Your Perfect Skincare Products',
     description: 'Professional hotel booking and management platform with advanced features for both guests and administrators. Find rooms, flats, hostels, and villas.',
     keywords: 'hotel, booking, property, rental, accommodation, rooms, flats, hostels, villas',
     authors: [{ name: 'Hotel Management System' }],

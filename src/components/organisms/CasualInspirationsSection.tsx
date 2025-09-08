@@ -54,8 +54,8 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
                   
                   <div className="flex items-end justify-between">
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1">
-                        Face<br />
+                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">
+                        Face
                         Serum
                       </h3>
                     </div>
@@ -73,7 +73,7 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
                 className="relative h-64 sm:h-80 rounded-[2rem] overflow-hidden bg-cover bg-center"
                 style={{
                  // backgroundImage: 'url(https://images.unsplash.com/photo-1508909493957-8701da3c31c5?q=80&w=1200&auto=format&fit=crop)',
-                  backgroundImage: 'url("https://cdn.kanaiya.shop/pics/Shower Gel/HairTreatment/HairTreatment.png")',  
+                  backgroundImage: 'url("https://cdn.kanaiya.shop/pics/ShowerGel/HairTreatment/HairTreatment.png")',  
                  backgroundColor: '#1F2937'
                 }}
               >
@@ -83,7 +83,7 @@ const CasualInspirationsSection: React.FC<CasualInspirationsProps> = ({ dict, cl
                   <div className="flex items-end justify-between">
                     <div>
                       <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">
-                        Hair<br />
+                        Hair
                         Treatment
                       </h3>
                     </div>

@@ -300,7 +300,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
               <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-between">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 drop-shadow-lg">
-                    Face<br />Care
+                    Face Care
                   </h3>
                 </div>
               </div>

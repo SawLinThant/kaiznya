@@ -64,7 +64,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
               <ul className="space-y-2 text-sm text-gray-300">
                 <li>
                   <a 
-                    href="https://facebook.com" 
+                    href="https://www.facebook.com/share/1Ct4gG3zq7/?mibextid=wwXIfr" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors duration-200"
@@ -74,7 +74,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 </li>
                 <li>
                   <a 
-                    href="https://instagram.com" 
+                    href="https://www.instagram.com/kanaiyacosmetic?igsh=MWFldmt4dzdvZzNrbg==" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors duration-200"
@@ -84,7 +84,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 </li>
                 <li>
                   <a 
-                    href="https://tiktok.com" 
+                    href="https://vt.tiktok.com/ZSAGyXLch/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors duration-200"
@@ -94,7 +94,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 </li>
                 <li>
                   <a 
-                    href="https://youtube.com" 
+                    href="https://youtube.com/@kanaiyacosmo?si=c9UEszkrM-h_Zk7S" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors duration-200"
@@ -104,12 +104,12 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                 </li>
                 <li>
                   <a 
-                    href="https://twitter.com" 
+                    href="https://t.me/kanaiya_cosmetics" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors duration-200"
                   >
-                    Twitter
+                    Telegram
                   </a>
                 </li>
               </ul>
