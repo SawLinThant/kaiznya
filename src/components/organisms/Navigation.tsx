@@ -25,7 +25,7 @@ const Navigation: React.FC<NavigationProps> = ({ locale, dict }) => {
     { href: `/${locale}`, label: dict?.navigation?.home || 'Tracking Package' },
     { href: `/${locale}/faq`, label: dict?.navigation?.faq || 'FAQ' },
     { href: `/${locale}/about`, label: dict?.navigation?.aboutus || 'About Us' },
-    { href: `/${locale}/contactus`, label: dict?.navigation?.contactus || 'Contact Us' },
+    { href: `/${locale}/contact`, label: dict?.navigation?.contactus || 'Contact Us' },
   ];
 
   return (

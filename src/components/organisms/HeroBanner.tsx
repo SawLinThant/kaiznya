@@ -140,10 +140,10 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
             <div className="lg:col-span-9 relative order-1 lg:order-1 min-h-[600px]">
               <div className="relative h-full min-h-[350px] sm:min-h-[400px] overflow-hidden bg-gray-200 animate-pulse" style={{ borderRadius: '2rem' }}>
                 <div className="flex items-center justify-center h-full">
-                  <div className="text-center">
+                  {/* <div className="text-center">
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto mb-4"></div>
                     <p className="text-gray-600">Loading banner slides...</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
