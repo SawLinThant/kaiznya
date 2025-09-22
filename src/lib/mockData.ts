@@ -98,24 +98,27 @@ export const mockProperties: Property[] = [
 export const mockBlogPosts: BlogPost[] = [
   {
     id: '1',
-    title: 'Choose the Right Skincare Routine!',
-    description: 'Learn how to select the perfect products for your skin type and needs.',
-    image: 'https://cdn.kanaiya.shop/pics/blog/blog1.png',
-    wordCount: 200
+    title: 'The Complete Guide to Korean Skincare Routine',
+    description: 'Discover the 10-step Korean skincare routine that will transform your skin. Learn the proper order and timing for maximum benefits.',
+    image: 'https://cdn.kanaiya.shop/pics/banner/banner1.jpg',
+    wordCount: 200,
+    slug: 'complete-guide-korean-skincare-routine'
   },
   {
     id: '2',
-    title: 'Best environment for rental',
-    description: 'Discover the best environments for property rental success.',
-    image: '/api/placeholder/300/200',
-    wordCount: 150
+    title: 'Kanaiya Face Serum: A Deep Dive Review',
+    description: 'After 30 days of testing, here\'s everything you need to know about our best-selling face serum.',
+    image: 'https://cdn.kanaiya.shop/pics/faceserum/BlueSerum1.png',
+    wordCount: 150,
+    slug: 'kanaiya-face-serum-deep-dive-review'
   },
   {
     id: '3',
-    title: 'Boys Hostel Apartment',
-    description: 'Everything you need to know about hostel accommodations.',
-    image: '/api/placeholder/300/200',
-    wordCount: 100
+    title: '2024 Beauty Trends: What\'s In and What\'s Out',
+    description: 'From glass skin to minimal makeup, discover the beauty trends that will dominate 2024.',
+    image: 'https://cdn.kanaiya.shop/pics/banner/banner2.jpg',
+    wordCount: 100,
+    slug: '2024-beauty-trends-whats-in-whats-out'
   }
 ];
 

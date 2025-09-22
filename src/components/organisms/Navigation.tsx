@@ -22,9 +22,11 @@ const Navigation: React.FC<NavigationProps> = ({ locale, dict }) => {
   };
 
   const navigationItems = [
-    { href: `/${locale}`, label: dict?.navigation?.home || 'Tracking Package' },
-    { href: `/${locale}/faq`, label: dict?.navigation?.faq || 'FAQ' },
+    { href: `/${locale}`, label: dict?.navigation?.home || 'Home' },
+    { href: `/${locale}/products`, label: dict?.navigation?.products || 'Products' },
+    { href: `/${locale}/blog`, label: dict?.navigation?.blog || 'Blog' },
     { href: `/${locale}/about`, label: dict?.navigation?.aboutus || 'About Us' },
+    { href: `/${locale}/faq`, label: dict?.navigation?.faq || 'FAQ' },
     { href: `/${locale}/contact`, label: dict?.navigation?.contactus || 'Contact Us' },
   ];
 

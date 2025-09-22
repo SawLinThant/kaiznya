@@ -13,6 +13,16 @@ export { default as AboutServiceSection } from './organisms/AboutServiceSection'
 export { default as BlogOverviewSection } from './organisms/BlogOverviewSection';
 export { default as Footer } from './organisms/Footer';
 export { default as Navigation } from './organisms/Navigation';
+export { default as ProductsHero } from './organisms/ProductsHero';
+export { default as ProductsSearch } from './organisms/ProductsSearch';
+export { default as ProductsFilters } from './organisms/ProductsFilters';
+export { default as ProductsGrid } from './organisms/ProductsGrid';
+export { default as ProductsPagination } from './organisms/ProductsPagination';
+export { default as ProductDetailHero } from './organisms/ProductDetailHero';
+export { default as ProductDetailTabs } from './organisms/ProductDetailTabs';
+export { default as ProductDetailRelated } from './organisms/ProductDetailRelated';
 
 // Templates
-export { default as HomePageTemplate } from './templates/HomePageTemplate'; 
+export { default as HomePageTemplate } from './templates/HomePageTemplate';
+export { default as ProductsPageTemplate } from './templates/ProductsPageTemplate';
+export { default as ProductDetailPageTemplate } from './templates/ProductDetailPageTemplate'; 

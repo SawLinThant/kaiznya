@@ -4,9 +4,10 @@ import { Header, HeroBanner, CasualInspirationsSection, TrendingProductsSection,
 
 interface HomePageTemplateProps {
   dict: any;
+  locale?: string;
 }
 
-const HomePageTemplate: React.FC<HomePageTemplateProps> = ({ dict }) => {
+const HomePageTemplate: React.FC<HomePageTemplateProps> = ({ dict, locale = 'en' }) => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -39,7 +40,7 @@ const HomePageTemplate: React.FC<HomePageTemplateProps> = ({ dict }) => {
       <AboutServiceSection dict={dict} />
   
       {/* Blog overview */}
-      <BlogOverviewSection dict={dict} />
+      <BlogOverviewSection dict={dict} locale={locale} />
     </div>
   );
 };

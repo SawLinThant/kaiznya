@@ -42,7 +42,7 @@ const transformAPIProduct = (apiProduct: APIProduct): Product => {
       6: 'lotion',
       7: 'shower-gel'
     };
-    return categoryMap[categoryId] || 'face-serum';
+    return categoryMap[categoryId] || ('face-serum' as ProductCategory);
   };
 
   return {

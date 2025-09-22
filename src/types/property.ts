@@ -21,6 +21,7 @@ export interface BlogPost {
   description: string;
   image: string;
   wordCount: number;
+  slug?: string;
 }
 
 export interface SearchFilters {
