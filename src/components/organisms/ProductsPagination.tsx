@@ -126,7 +126,7 @@ const ProductsPagination: React.FC<ProductsPaginationProps> = ({
               : 'text-gray-700 bg-white hover:bg-gray-50'
           )}
         >
-          <Icon name="send" className="w-4 h-4 mr-1 rotate-180" />
+          {/* <Icon name="send" className="w-4 h-4 mr-1 rotate-180" /> */}
           Previous
         </button>
 
@@ -147,7 +147,7 @@ const ProductsPagination: React.FC<ProductsPaginationProps> = ({
           )}
         >
           Next
-          <Icon name="send" className="w-4 h-4 ml-1" />
+          {/* <Icon name="send" className="w-4 h-4 ml-1" /> */}
         </button>
       </div>
     </div>

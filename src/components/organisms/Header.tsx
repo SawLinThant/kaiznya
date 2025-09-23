@@ -6,9 +6,10 @@ import { cn } from "@/lib/utils";
 interface HeaderProps {
   dict?: any;
   className?: string;
+  locale?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ dict, className }) => {
+const Header: React.FC<HeaderProps> = ({ dict, className, locale = 'en' }) => {
   return (
     <header className={cn("bg-white border-gray-200 hidden md:block", className)}>
       {/* Top Navigation Bar */}
@@ -48,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ dict, className }) => {
                 Gift Cards
               </Link> */}
               <Link
-                href="/special-event"
+                href={`/${locale}/special-event`}
                 className="text-sm font-medium min-w-[100px] text-gray-700 hover:text-gray-900 transition-colors"
               >
                 Special Event

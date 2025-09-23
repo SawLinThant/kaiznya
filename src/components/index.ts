@@ -8,6 +8,7 @@ export { default as Header } from './organisms/Header';
 export { default as HeroBanner } from './organisms/HeroBanner';
 export { default as CasualInspirationsSection } from './organisms/CasualInspirationsSection';
 export { default as TrendingProductsSection } from './organisms/TrendingProductsSection';
+export { default as ReviewSection } from './organisms/ReviewSection';
 export { default as ExploreColorSection } from './organisms/ExploreColorSection';
 export { default as AboutServiceSection } from './organisms/AboutServiceSection';
 export { default as BlogOverviewSection } from './organisms/BlogOverviewSection';
@@ -25,4 +26,5 @@ export { default as ProductDetailRelated } from './organisms/ProductDetailRelate
 // Templates
 export { default as HomePageTemplate } from './templates/HomePageTemplate';
 export { default as ProductsPageTemplate } from './templates/ProductsPageTemplate';
-export { default as ProductDetailPageTemplate } from './templates/ProductDetailPageTemplate'; 
+export { default as ProductDetailPageTemplate } from './templates/ProductDetailPageTemplate';
+export { default as SpecialEventPageTemplate } from './templates/SpecialEventPageTemplate'; 

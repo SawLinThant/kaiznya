@@ -14,20 +14,20 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
 
   return {
     title: 'Kanaiya - Find Your Perfect Skincare Products',
-    description: 'Professional hotel booking and management platform with advanced features for both guests and administrators. Find rooms, flats, hostels, and villas.',
-    keywords: 'hotel, booking, property, rental, accommodation, rooms, flats, hostels, villas',
-    authors: [{ name: 'Hotel Management System' }],
+    description: 'Discover premium skincare products with Kanaiya. Professional skincare solutions for healthy, radiant skin.',
+    keywords: 'skincare, beauty, cosmetics, face care, skin health, premium skincare, Kanaiya',
+    authors: [{ name: 'Kanaiya' }],
     openGraph: {
-      title: 'Hotel Management System - Find Your Perfect Property',
-      description: 'Professional hotel booking and management platform with advanced features for both guests and administrators.',
+      title: 'Kanaiya - Find Your Perfect Skincare Products',
+      description: 'Discover premium skincare products with Kanaiya. Professional skincare solutions for healthy, radiant skin.',
       type: 'website',
       locale: locale,
       alternateLocale: locale === 'en' ? 'my' : 'en',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Hotel Management System - Find Your Perfect Property',
-      description: 'Professional hotel booking and management platform with advanced features for both guests and administrators.',
+      title: 'Kanaiya - Find Your Perfect Skincare Products',
+      description: 'Discover premium skincare products with Kanaiya. Professional skincare solutions for healthy, radiant skin.',
     },
     robots: {
       index: true,

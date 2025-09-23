@@ -9,8 +9,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "kanaiya",
-  description: "kanaiya",
+  title: {
+    default: "Kanaiya - Premium Skincare Products",
+    template: "%s | Kanaiya"
+  },
+  description: "Discover premium skincare products with Kanaiya. Professional skincare solutions for healthy, radiant skin.",
+  applicationName: "Kanaiya",
+  authors: [{ name: "Kanaiya" }],
+  keywords: ["skincare", "beauty", "cosmetics", "face care", "skin health", "premium skincare"],
+  openGraph: {
+    type: "website",
+    siteName: "Kanaiya",
+    title: "Kanaiya - Premium Skincare Products",
+    description: "Discover premium skincare products with Kanaiya. Professional skincare solutions for healthy, radiant skin.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@kanaiya",
+    creator: "@kanaiya",
+  },
 };
 
 export default function RootLayout({

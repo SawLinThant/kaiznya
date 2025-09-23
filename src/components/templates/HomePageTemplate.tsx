@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Header, HeroBanner, CasualInspirationsSection, TrendingProductsSection, ExploreColorSection, AboutServiceSection, BlogOverviewSection } from '@/components';
+import { Header, HeroBanner, CasualInspirationsSection, TrendingProductsSection, ReviewSection, ExploreColorSection, AboutServiceSection, BlogOverviewSection } from '@/components';
 
 interface HomePageTemplateProps {
   dict: any;
@@ -11,7 +11,7 @@ const HomePageTemplate: React.FC<HomePageTemplateProps> = ({ dict, locale = 'en'
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <Header dict={dict} />
+      <Header dict={dict} locale={locale} />
       
       {/* To Do - add product brand video here */}
 
@@ -26,6 +26,12 @@ const HomePageTemplate: React.FC<HomePageTemplateProps> = ({ dict, locale = 'en'
 
       {/* Trending Products Section */}
       <TrendingProductsSection dict={dict} />
+
+      {/* separater */}
+      <div className="h-[2px] bg-gray-100"></div>
+
+      {/* Review Section */}
+      <ReviewSection dict={dict} />
 
       {/* separater */}
       <div className="h-[2px] bg-gray-100"></div>

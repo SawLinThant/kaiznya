@@ -69,7 +69,7 @@ export const mockColorTags: ColorTag[] = [
 
 export const getExploreColorData = (dict?: any): ExploreColorData => {
   return {
-    title: dict?.home?.sections?.explore_colors || 'Explore by Colors',
+    title: dict?.home?.sections?.explore_colors || 'Explore by Types',
     colors: mockColorTags,
     testimonial: {
       quote: dict?.home?.testimonial?.quote || 'Love the way they handle the order.',
