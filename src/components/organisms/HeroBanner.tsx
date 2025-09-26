@@ -19,21 +19,13 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
 
   // Debug CDN fetch
   React.useEffect(() => {
-    console.log('=== HeroBanner CDN Debug ===');
-    console.log('CDN Slides:', cdnSlides);
-    console.log('Is Loading:', isLoading);
-    console.log('Error:', error);
-    console.log('Use Fallback:', useFallback);
-    console.log('CDN Base URL:', process.env.NEXT_PUBLIC_CDN_BASE_URL || 'https://cdn.kanaiya.shop');
-    console.log('Full URL:', `${process.env.NEXT_PUBLIC_CDN_BASE_URL || 'https://cdn.kanaiya.shop'}/banner/banner.json`);
-    console.log('========================');
+    // CDN debug information removed
   }, [cdnSlides, isLoading, error, useFallback]);
 
   // Set a timeout to use fallback data if CDN takes too long
   React.useEffect(() => {
     const timeout = setTimeout(() => {
       if (isLoading && !cdnSlides) {
-        console.log('CDN timeout - using fallback data');
         setUseFallback(true);
       }
     }, 5000); // 5 second timeout
@@ -71,20 +63,12 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
 
   // Use CDN data if available, otherwise use fallback
   const slides = useMemo(() => {
-    console.log('=== HeroBanner CDN Data ===');
-    console.log('CDN Slides:', cdnSlides);
-    console.log('Is Loading:', isLoading);
-    console.log('Error:', error);
-    console.log('Use Fallback:', useFallback);
-    
     // Use fallback if timeout occurred or if there's an error
     if (useFallback || error || !cdnSlides || cdnSlides.length === 0) {
-      console.log('Using fallback slides data');
       return fallbackSlides;
     }
     
     if (cdnSlides && cdnSlides.length > 0) {
-      console.log('Using CDN slides data');
       return cdnSlides.map((slide: any, index: number) => ({
         id: slide.id || index + 1,
         title: slide.title || slide.name || `Slide ${index + 1}`,
@@ -95,7 +79,6 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
       }));
     }
     
-    console.log('Using fallback slides data (default)');
     return fallbackSlides;
   }, [cdnSlides, isLoading, error, useFallback]);
 
@@ -159,7 +142,6 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
 
   // Error state
   if (error) {
-    console.error('Banner slides error:', error);
     // Continue with fallback slides
   }
 

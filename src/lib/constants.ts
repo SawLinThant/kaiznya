@@ -63,7 +63,7 @@ export const CDN_ENDPOINTS = {
   BANNERS: '/kanaiya_json/banner/banner.json',
   BANNER_SLIDES: '/kanaiya_json/banner/slides.json',
   HERO_BANNERS: '/kanaiya_json/banner/hero.json',
-  BANNER_JSON: '/kanaiya_json/blog/posts/featured.json',
+  BANNER_JSON: '/kanaiya_json/banner/banner.json',
   
   // Blog/Content endpoints
   BLOG_POSTS: '/kanaiya_json/blog/posts.json',

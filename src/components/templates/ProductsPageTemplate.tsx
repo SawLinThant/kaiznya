@@ -56,13 +56,26 @@ const transformCDNProduct = (cdnProduct: any): Product => {
     const categoryIdMap: Record<number, ProductCategory> = {
       1: 'face-serum',
       2: 'face-wash',
-      3: 'lotion',
+      3: 'cream-powder',
       4: 'shower-gel',
+      5: 'liquid-foundation',
       6: 'lotion',
       7: 'shower-gel',
     };
     const cid = Number(cdnProduct.category_id);
     mappedCategory = categoryIdMap[cid] || 'face-serum';
+    
+    // Debug logging for category mapping
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`Product "${cdnProduct.title || cdnProduct.name}" (ID: ${cdnProduct.id}):`, {
+        category_id: cdnProduct.category_id,
+        endpoint: cdnProduct.endpoint,
+        shop_endpoint: cdnProduct.shop_endpoint,
+        mappedCategory: mappedCategory,
+        endpointSlug,
+        shopEndpointSlug
+      });
+    }
   }
 
   // Image mapping from CDN structure
@@ -159,68 +172,29 @@ const ProductsPageTemplate: React.FC<ProductsPageTemplateProps> = ({
     return Array.isArray(mockProducts) ? mockProducts : [];
   }, [cdnProducts, mockProducts]);
 
-  // Debug logging (remove in production)
-  if (process.env.NODE_ENV === 'development') {
-    // console.log('CDN Products:', cdnProducts);
-    // console.log('CDN Products type:', typeof cdnProducts, 'isArray:', Array.isArray(cdnProducts));
-    // console.log('CDN Categories:', cdnCategories);
-    // console.log('CDN Categories type:', typeof cdnCategories, 'isArray:', Array.isArray(cdnCategories));
-    
-    // Check if CDN data might be wrapped in a response object
-    if (cdnCategories && typeof cdnCategories === 'object' && 'data' in cdnCategories) {
-      console.log('CDN Categories appears to be wrapped in response object:', cdnCategories);
-    }
-  }
+  // Debug logging removed for production
  
 
   // Process categories with counts
   const categoriesWithCounts = useMemo(() => {
-    // Debug logging (remove in production)
-    if (process.env.NODE_ENV === 'development') {
-      // console.log('Processing categories...');
-      // console.log('cdnCategories type:', typeof cdnCategories);
-      // console.log('cdnCategories isArray:', Array.isArray(cdnCategories));
-      // console.log('cdnCategories length:', cdnCategories?.length);
-    }
+    // Debug logging removed for production
     
     // Extract categories from CDN data (handle both wrapped and unwrapped responses)
     let rawCategories: any = cdnCategories;
     if (cdnCategories && typeof cdnCategories === 'object' && 'data' in cdnCategories) {
-      if (process.env.NODE_ENV === 'development') {
-        console.log('CDN Categories is wrapped, extracting data:', cdnCategories.data);
-      }
       rawCategories = (cdnCategories as any).data;
     }
     
     // Use CDN categories if available, otherwise fallback to mock categories
     let baseCategories;
     if (rawCategories && Array.isArray(rawCategories)) {
-      if (process.env.NODE_ENV === 'development') {
-       // console.log('Raw CDN categories:', rawCategories);
-       // console.log('First category structure:', rawCategories[0]);
-      }
-      
       // More lenient filtering - just check if it's an object
       const validCategories = rawCategories.filter((cat: any) => {
-        if (process.env.NODE_ENV === 'development') {
-          console.log('Checking category:', cat, 'is object:', typeof cat === 'object', 'has id:', !!cat?.id, 'has name:', !!cat?.name, 'has title:', !!(cat as any)?.title);
-        }
         return cat && typeof cat === 'object' && (cat.id || (cat as any).title);
       });
       
-      if (process.env.NODE_ENV === 'development') {
-        console.log('Valid categories after filter:', validCategories);
-      }
-      
       baseCategories = validCategories.map(transformCDNCategory);
-      
-      if (process.env.NODE_ENV === 'development') {
-        console.log('Transformed categories:', baseCategories);
-      }
     } else {
-      if (process.env.NODE_ENV === 'development') {
-        //console.log('Using mock categories - rawCategories:', rawCategories);
-      }
       baseCategories = mockCategories;
     }
 
@@ -230,6 +204,8 @@ const ProductsPageTemplate: React.FC<ProductsPageTemplateProps> = ({
         count: 0
       }));
     }
+
+    
 
     // Calculate product counts for each category
     const categoryCounts = allProducts.reduce((acc, product) => {
@@ -242,13 +218,7 @@ const ProductsPageTemplate: React.FC<ProductsPageTemplateProps> = ({
       ...cat,
       count: categoryCounts[cat.slug] || 0
     }));
-  }, [cdnCategories, allProducts]);
-console.log("cdnCategories", cdnCategories);
-  console.log('Categories With Counts:', categoriesWithCounts);
-
-  if (process.env.NODE_ENV === 'development') {
-    //console.log('Categories With Counts:', categoriesWithCounts);
-  }
+    }, [cdnCategories, allProducts]);
 
   // Filter and sort products
   const filteredProducts = useMemo(() => {

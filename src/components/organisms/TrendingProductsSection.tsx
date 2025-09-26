@@ -79,7 +79,6 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(({ product, onLikeTog
 
   const handleCardClick = useCallback(() => {
     // Navigate to product detail page
-    console.log('Navigate to product:', product.id);
   }, [product.id]);
 
   return (
@@ -187,42 +186,11 @@ const TrendingProductsSection: React.FC<TrendingProductsSectionProps> = ({
     return mockCategories;
   }, [cdnCategories]);
 
-    console.log('CDN Categories Origin:', cdnCategories);
 
 
-  // Console log the CDN data
+  // CDN data monitoring
   React.useEffect(() => {
-    console.log('=== CDN Data Results ===');
-    console.log('All Products:', allProducts);
-    console.log('Raw Categories Data:', categories);
-    console.log('Categories Type:', typeof categories);
-    console.log('Categories Length:', Array.isArray(categories) ? categories.length : 'Not an array');
-    if (Array.isArray(categories) && categories.length > 0) {
-      console.log('First Category Structure:', categories[0]);
-    }
-    console.log('CDN Categories (transformed):', cdnCategories);
-    console.log('Display Categories (final):', displayCategories);
-    console.log('Products Loading:', productsLoading);
-    console.log('Categories Loading:', categoriesLoading);
-    console.log('Products Error:', productsError);
-    console.log('Categories Error:', categoriesError);
-    if (productsError) {
-      console.error('CDN Products Error Details:', {
-        message: productsError.message,
-        code: productsError.code,
-        status: productsError.status,
-        details: productsError.details
-      });
-    }
-    if (categoriesError) {
-      console.error('CDN Categories Error Details:', {
-        message: categoriesError.message,
-        code: categoriesError.code,
-        status: categoriesError.status,
-        details: categoriesError.details
-      });
-    }
-    console.log('========================');
+    // CDN data monitoring removed
   }, [allProducts, categories, cdnCategories, productsLoading, categoriesLoading, productsError, categoriesError]);
 
   // Memoized data to prevent unnecessary recalculations
@@ -235,9 +203,6 @@ const TrendingProductsSection: React.FC<TrendingProductsSectionProps> = ({
     // Get all products and filter by category
     const sourceProducts = (allProducts as unknown as APIProduct[]) || [];
 
-    console.log('Active Category:', activeCategory);
-    console.log('All Products:', sourceProducts);
-    
     // Transform API products to local format
     const transformedProducts = sourceProducts.map(transformAPIProduct);
     
@@ -245,8 +210,6 @@ const TrendingProductsSection: React.FC<TrendingProductsSectionProps> = ({
     const filteredProducts = activeCategory === 'all'
       ? transformedProducts
       : transformedProducts.filter(product => product.category === activeCategory);
-    
-    console.log('Filtered Products:', filteredProducts);
     
     return filteredProducts.map(product => ({
       ...product,

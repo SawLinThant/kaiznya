@@ -202,7 +202,62 @@ export class CDNFetcher {
           );
         }
 
-        const data = await response.json();
+        // Read response as text first to avoid "body stream already read" error
+        const responseText = await response.text();
+        
+        let data;
+        try {
+          data = JSON.parse(responseText);
+        } catch (jsonError) {
+          // If JSON parsing fails, try to fix common issues
+          console.warn('JSON parsing failed, attempting to fix. Original error:', jsonError);
+          console.warn('Response text length:', responseText.length);
+          console.warn('First 200 chars:', responseText.substring(0, 200));
+          
+          try {
+            // Try to fix common JSON issues
+            let fixedText = responseText.trim();
+            
+            console.log('Original response text:', fixedText);
+            
+            // Fix unquoted property names (common in malformed JSON)
+            // Pattern: { id: 1, title: "text" } -> { "id": 1, "title": "text" }
+            fixedText = fixedText.replace(/([{,]\s*)([a-zA-Z_$][a-zA-Z0-9_$]*)\s*:/g, '$1"$2":');
+            
+            // Handle the specific case where we have multiple objects without array brackets
+            // Pattern: { ... }, { ... }, { ... }
+            if (fixedText.startsWith('{') && !fixedText.startsWith('[')) {
+              // Count opening braces to determine if we have multiple objects
+              const openBraces = (fixedText.match(/\{/g) || []).length;
+              const closeBraces = (fixedText.match(/\}/g) || []).length;
+              
+              if (openBraces > 1 && openBraces === closeBraces) {
+                // We have multiple objects, wrap them in array brackets
+                fixedText = '[' + fixedText + ']';
+                console.log('Wrapped multiple objects in array brackets');
+              }
+            }
+            
+            // Remove trailing commas before closing brackets/braces
+            fixedText = fixedText.replace(/,(\s*[}\]])/g, '$1');
+            
+            // Remove any trailing commas at the end
+            fixedText = fixedText.replace(/,(\s*)$/, '$1');
+            
+            console.log('Fixed text:', fixedText);
+            
+            // Try to parse the fixed JSON
+            data = JSON.parse(fixedText);
+            console.log('Successfully fixed and parsed JSON');
+          } catch (fixError) {
+            throw new CDNFetchError(
+              `Invalid JSON response: ${jsonError instanceof Error ? jsonError.message : 'Unknown JSON error'}`,
+              'JSON_PARSE_ERROR',
+              response.status,
+              { originalText: responseText, fixError: fixError instanceof Error ? fixError.message : 'Unknown fix error' }
+            );
+          }
+        }
 
         // Handle both wrapped and raw JSON responses
         if (data && typeof data === 'object' && 'success' in data) {

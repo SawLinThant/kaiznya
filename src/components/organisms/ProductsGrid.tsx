@@ -151,7 +151,6 @@ const ProductCard: React.FC<{
                 e.preventDefault();
                 e.stopPropagation();
                 // Handle add to cart
-                console.log('Add to cart:', product.id);
               }}
               className="mt-4 w-full bg-pink-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-pink-700 transition-colors duration-200 opacity-0 group-hover:opacity-100"
             >
