@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useCallback, useMemo, useEffect } from 'react';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { getExploreColorData } from '@/lib/colorMockData';
 
@@ -144,11 +145,18 @@ const ExploreColorSection: React.FC<ExploreColorSectionProps> = ({
 
         {/* Slider Banner */}
         <div 
-          className="relative rounded-3xl overflow-hidden bg-cover bg-center"
+          className="relative rounded-3xl overflow-hidden"
           onMouseEnter={() => setIsAutoPlaying(false)}
           onMouseLeave={() => setIsAutoPlaying(true)}
-          style={{ backgroundImage: `url(${activeSlide?.image || ''})` }}
         >
+          <Image
+            src={activeSlide?.image || '/vercel.svg'}
+            alt={activeSlide?.title || 'banner'}
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority={false}
+          />
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative grid grid-cols-1 min-h-[400px] sm:min-h-[450px]">
             <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">

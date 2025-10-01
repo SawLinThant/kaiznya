@@ -2,170 +2,622 @@
   {
     "id": 1,
     "category_id": 1,
-    "title": "Face Serum",
+    "title": "Retinol +Hyaluron",
     "description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "images": [
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/retinol.jpg"
       },
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/vitcb5.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/face-serum",
-    "shop_endpoint": "/creampact-powder"
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 2,
     "category_id": 1,
-    "title": "Face Serum",
+    "title": "VitaC+B5",
     "description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "images": [
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/vitcb5.jpg"
       },
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/vitcb5.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/face-serum",
-    "shop_endpoint": "/creampact-powder"
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 3,
     "category_id": 1,
-    "title": "Face Serum",
+    "title": "Blue Serum",
     "description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "images": [
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/faceserum/BlueSerum1.png"
       },
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/faceserum/BlueSerum1.png"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/face-serum",
-    "shop_endpoint": "/creampact-powder"
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 4,
     "category_id": 7,
-    "title": "Shower Gel",
+    "title": "Mixed Fruit",
     "description": "Shower GelShower GelShower GelShower GelShower Gel",
     "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "images": [
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/mixedfruits.jpg"
       },
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/mixedfruits.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/shower-gel",
-    "shop_endpoint": "/creampact-powder"
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
+  },
+  {
+    "id": 26,
+    "category_id": 7,
+    "title": "Rice & Yogurt",
+    "description": "Shower GelShower GelShower GelShower GelShower Gel",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/riceandyogurt.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/riceandyogurt.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/shower-gel",
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
+  },
+    {
+    "id": 27,
+    "category_id": 7,
+    "title": "Peach&MariGold",
+    "description": "Shower GelShower GelShower GelShower GelShower Gel",
+    "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+    "images": [
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/pics/ShowerGel/peachandmarigold.jpg"
+      },
+      {
+        "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
+        "imageSrc": "https://cdn.kanaiya.shop/ShowerGel/peachandmarigold.jpg"
+      }
+    ],
+    "price": 100,
+    "currency": "$",
+    "endpoint": "/shower-gel",
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 5,
-    "category_id": 2,
-    "title": "Face Wash",
+    "category_id": 6,
+    "title": "Rose Milk",
     "description": "Face WashFace WashFace WashFace WashFace Wash",
     "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "images": [
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/rosemilk.jpg"
       },
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/rosemilk.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/face-wash",
-    "shop_endpoint": "/creampact-powder"
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 6,
-    "category_id": 3,
-    "title": "Creampact Powder",
+    "category_id": 6,
+    "title": "Sakura",
     "description": "Creampact PowderCreampact PowderCreampact PowderCreampact PowderCreampact Powder",
     "short_description": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
     "images": [
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/sakura.jpg"
       },
       {
         "alt": "Face SerumFace SerumFace SerumFace SerumFace SerumFace Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/sakura.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/creampact-powder",
-    "shop_endpoint": "/creampact-powder"
+    "shop_endpoint": "/creampact-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 7,
-    "category_id": 4,
-    "title": "Hair Treatment",
+    "category_id": 6,
+    "title": "Lemongrass",
     "description": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
     "short_description": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
     "images": [
       {
         "alt": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/lemon.jpg"
       },
       {
         "alt": "Hair TreatmentHair TreatmentHair TreatmentHair TreatmentHair Treatment",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/lemon.jpg"
       }
     ],
     "price": 150,
     "currency": "$",
     "endpoint": "/hair-treatment",
-    "shop_endpoint": "/hair-treatment"
+    "shop_endpoint": "/hair-treatment",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 8,
     "category_id": 6,
-    "title": "Lotion",
+    "title": "Sakura Lotion",
     "description": "LotionLotionLotionLotionLotionLotion",
     "short_description": "LotionLotionLotionLotionLotionLotion",
     "images": [
       {
         "alt": "LotionLotionLotionLotionLotionLotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/sakura.jpg"
       },
       {
         "alt": "LotionLotionLotionLotionLotionLotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/sakura.jpg"
       }
     ],
     "price": 80,
     "currency": "$",
     "endpoint": "/lotion",
-    "shop_endpoint": "/lotion"
+    "shop_endpoint": "/lotion",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 9,
@@ -176,17 +628,58 @@
     "images": [
       {
         "alt": "Anti-Acne Face Wash",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FW/neemteatree.jpg"
       },
       {
         "alt": "Anti-Acne Face Wash",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FW/neemteatree.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/anti-acne-face-wash",
-    "shop_endpoint": "/anti-acne-face-wash"
+    "shop_endpoint": "/anti-acne-face-wash",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 10,
@@ -197,17 +690,58 @@
     "images": [
       {
         "alt": "Whitening Face Wash",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FW/pearltumeric.jpg"
       },
       {
         "alt": "Whitening Face Wash",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FW/pearltumeric.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/whitening-face-wash",
-    "shop_endpoint": "/whitening-face-wash"
+    "shop_endpoint": "/whitening-face-wash",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 11,
@@ -218,17 +752,58 @@
     "images": [
       {
         "alt": "Anti-Aging Face Wash",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FW/kiwibanana.jpg"
       },
       {
         "alt": "Anti-Aging Face Wash",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FW/kiwibanana.jpg"
       }
     ],
     "price": 100,
     "currency": "$",
     "endpoint": "/anti-aging-face-wash",
-    "shop_endpoint": "/anti-aging-face-wash"
+    "shop_endpoint": "/anti-aging-face-wash",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 12,
@@ -239,17 +814,58 @@
     "images": [
       {
         "alt": "Perfecting Liquid Foundation",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/LF/oilfacecare.jpg"
       },
       {
         "alt": "Perfecting Liquid Foundation",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/LF/oilfacecare.jpg"
       }
     ],
     "price": 120,
     "currency": "$",
     "endpoint": "/perfecting-liquid-foundation",
-    "shop_endpoint": "/perfecting-liquid-foundation"
+    "shop_endpoint": "/perfecting-liquid-foundation",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 13,
@@ -260,17 +876,58 @@
     "images": [
       {
         "alt": "High Definition Liquid Foundation",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/LF/dryfacecare.jpg"
       },
       {
         "alt": "High Definition Liquid Foundation",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/LF/dryfacecare.jpg"
       }
     ],
     "price": 120,
     "currency": "$",
     "endpoint": "/high-definition-liquid-foundation",
-    "shop_endpoint": "/high-definition-liquid-foundation"
+    "shop_endpoint": "/high-definition-liquid-foundation",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 14,
@@ -281,17 +938,58 @@
     "images": [
       {
         "alt": "Nourishing Liquid Foundation",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/LF/agedefying.jpg"
       },
       {
         "alt": "Nourishing Liquid Foundation",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/LF/agedefying.jpg"
       }
     ],
     "price": 120,
     "currency": "$",
     "endpoint": "/nourishing-liquid-foundation",
-    "shop_endpoint": "/nourishing-liquid-foundation"
+    "shop_endpoint": "/nourishing-liquid-foundation",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 15,
@@ -302,17 +1000,58 @@
     "images": [
       {
         "alt": "Oil Control Powder",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/CP/cp1.jpg"
       },
       {
         "alt": "Oil Control Powder",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/CP/cp1.jpg"
       }
     ],
     "price": 80,
     "currency": "$",
     "endpoint": "/oil-control-powder",
-    "shop_endpoint": "/oil-control-powder"
+    "shop_endpoint": "/oil-control-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 16,
@@ -323,17 +1062,58 @@
     "images": [
       {
         "alt": "2-Way Cake Powder",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/CP/2waypowder.jpg"
       },
       {
         "alt": "2-Way Cake Powder",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/CP/2waypowder.jp"
       }
     ],
     "price": 80,
     "currency": "$",
     "endpoint": "/2-way-cake-powder",
-    "shop_endpoint": "/2-way-cake-powder"
+    "shop_endpoint": "/2-way-cake-powder",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 17,
@@ -344,17 +1124,58 @@
     "images": [
       {
         "alt": "Sakura Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/sakura.jpg"
       },
       {
         "alt": "Sakura Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/sakura.jpg"
       }
     ],
     "price": 90,
     "currency": "$",
     "endpoint": "/sakura-lotion",
-    "shop_endpoint": "/sakura-lotion"
+    "shop_endpoint": "/sakura-lotion",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 18,
@@ -365,17 +1186,58 @@
     "images": [
       {
         "alt": "Gluta Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/gluta.jpg"
       },
       {
         "alt": "Gluta Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/gluta.jpg"
       }
     ],
     "price": 90,
     "currency": "$",
     "endpoint": "/gluta-lotion",
-    "shop_endpoint": "/gluta-lotion"
+    "shop_endpoint": "/gluta-lotion",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 19,
@@ -386,17 +1248,58 @@
     "images": [
       {
         "alt": "Lemongrass Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/lemon.jpg"
       },
       {
         "alt": "Lemongrass Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/lemon.jpg"
       }
     ],
     "price": 90,
     "currency": "$",
     "endpoint": "/lemongrass-lotion",
-    "shop_endpoint": "/lemongrass-lotion"
+    "shop_endpoint": "/lemongrass-lotion",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 20,
@@ -407,17 +1310,58 @@
     "images": [
       {
         "alt": "Rose Milk Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/rosemilk.jpg"
       },
       {
         "alt": "Rose Milk Lotion",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/BL/rosemilk.jpg"
       }
     ],
     "price": 90,
     "currency": "$",
     "endpoint": "/rose-milk-lotion",
-    "shop_endpoint": "/rose-milk-lotion"
+    "shop_endpoint": "/rose-milk-lotion",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "FreeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 21,
@@ -428,17 +1372,58 @@
     "images": [
       {
         "alt": "Peach And Marigold Shower Gel",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/peachmarigold.jpg"
       },
       {
         "alt": "Peach And Marigold Shower Gel",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/peachmarigold.jpg"
       }
     ],
     "price": 85,
     "currency": "$",
     "endpoint": "/peach-marigold-shower-gel",
-    "shop_endpoint": "/peach-marigold-shower-gel"
+    "shop_endpoint": "/peach-marigold-shower-gel",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 22,
@@ -449,17 +1434,58 @@
     "images": [
       {
         "alt": "Rice And Yogurt Shower Gel",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/riceandyogurt.jpg"
       },
       {
         "alt": "Rice And Yogurt Shower Gel",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/riceandyogurt.jpg"
       }
     ],
     "price": 85,
     "currency": "$",
     "endpoint": "/rice-yogurt-shower-gel",
-    "shop_endpoint": "/rice-yogurt-shower-gel"
+    "shop_endpoint": "/rice-yogurt-shower-gel",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 23,
@@ -470,17 +1496,58 @@
     "images": [
       {
         "alt": "Mixed Fruits Shower Gel",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/mixedfruits.jpg"
       },
       {
         "alt": "Mixed Fruits Shower Gel",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/SG/mixedfruits.jpg"
       }
     ],
     "price": 85,
     "currency": "$",
     "endpoint": "/mixed-fruits-shower-gel",
-    "shop_endpoint": "/mixed-fruits-shower-gel"
+    "shop_endpoint": "/mixed-fruits-shower-gel",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 24,
@@ -491,17 +1558,58 @@
     "images": [
       {
         "alt": "Retinol + Hyaluron Face Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/retinol.jpg"
       },
       {
         "alt": "Retinol + Hyaluron Face Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/retinol.jpg"
       }
     ],
     "price": 150,
     "currency": "$",
     "endpoint": "/retinol-hyaluron-face-serum",
-    "shop_endpoint": "/retinol-hyaluron-face-serum"
+    "shop_endpoint": "/retinol-hyaluron-face-serum",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   },
   {
     "id": 25,
@@ -512,16 +1620,57 @@
     "images": [
       {
         "alt": "Vitamin C + B5 Face Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/vitcb5.jpg"
       },
       {
         "alt": "Vitamin C + B5 Face Serum",
-        "imageSrc": "https://cdn.kanaiya.shop/pics/C_P/1.jpg"
+        "imageSrc": "https://cdn.kanaiya.shop/pics/kanaiya images/FS/vitcb5.jpg"
       }
     ],
     "price": 150,
     "currency": "$",
     "endpoint": "/vitamin-c-b5-face-serum",
-    "shop_endpoint": "/vitamin-c-b5-face-serum"
+    "shop_endpoint": "/vitamin-c-b5-face-serum",
+    "keyBenefits": [
+      "Gentle on all skin types",
+      "Dermatologist tested",
+      "Cruelty-free formula",
+      "Made with natural ingredients"
+    ],
+    "keyFeatures": [
+      "Advanced anti-aging formula",
+      "Dermatologist tested and approved",
+      "Suitable for all skin types",
+      "Cruelty-free and vegan",
+      "Made with natural and organic ingredients"
+    ],
+    "ingredients": [
+      "Aqua (Water)",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Niacinamide",
+      "Retinol",
+      "Vitamin C",
+      "Hyaluronic Acid",
+      "Peptides",
+      "Ceramides",
+      "Jojoba Oil",
+      "Aloe Vera Extract",
+      "Green Tea Extract",
+      "Chamomile Extract",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
+    "howToUse": [
+      "Cleanse your face",
+      "Apply the product",
+      "Let it absorb",
+      "Follow with moisturizer"
+    ],
+    "shipping": {
+      "freeShipping": true,
+      "moneyBackGuarantee": true,
+      "crueltyFree": true
+    }
   }
 ]

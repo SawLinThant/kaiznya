@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useCallback, useMemo } from 'react';
+import Image from 'next/image';
 import { Button, Icon } from '@/components';
 import { cn } from '@/lib/utils';
 import { Product, ProductCategory } from '@/types/product';
@@ -91,12 +92,14 @@ const ProductCard: React.FC<ProductCardProps> = React.memo(({ product, onLikeTog
     >
       <div className="relative bg-white rounded-2xl overflow-hidden h-full flex flex-col max-h-full">
         {/* Product Image Container - Fixed height for all cards */}
-        <div className="relative h-80 overflow-hidden">
-          <img
-            src={product.image}
+        <div className="relative h-80 overflow-hidden rounded-2xl bg-white">
+          <Image
+            src={product.image || '/vercel.svg'}
             alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-2xl bg-white"
-            loading="lazy"
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
+            priority={false}
           />
           
           {/* Like Button */}

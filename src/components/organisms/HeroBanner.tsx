@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components';
 import { cn } from '@/lib/utils';
 import { useBannerSlides } from '@/hooks/useCDNData';
@@ -169,13 +170,15 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ dict, className }) => {
                       index === currentSlide ? 'opacity-100' : 'opacity-0'
                     }`}
                   >
-                    <div 
-                      className="relative h-full w-full bg-cover bg-center bg-no-repeat"
-                      style={{
-                        backgroundImage: `url("${slide.backgroundImage}")`,
-                        backgroundColor: slide.backgroundColor // Fallback color
-                      }}
-                    >
+                    <div className="relative h-full w-full">
+                      <Image
+                        src={slide.backgroundImage}
+                        alt={slide.title}
+                        fill
+                        sizes="100vw"
+                        priority={index === 0}
+                        className="object-cover"
+                      />
                       {/* Overlay for better text readability */}
                       <div className="absolute inset-0 bg-black/30"></div>
                       

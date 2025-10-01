@@ -35,13 +35,10 @@ const ProductDetailHero: React.FC<ProductDetailHeroProps> = ({
     ).join(' ');
   };
 
-  // Mock additional images for gallery
-  const productImages = [
-    product.image,
-    product.image, // In real app, these would be different images
-    product.image,
-    product.image,
-  ];
+  // Prefer CDN images array if provided, fallback to single image
+  const productImages = (Array.isArray(product.images) && product.images.length > 0)
+    ? product.images.map(img => img.imageSrc || img.url || product.image)
+    : [product.image];
 
   return (
     <section className={cn('py-8 sm:py-12 lg:py-16', className)}>
@@ -165,28 +162,32 @@ const ProductDetailHero: React.FC<ProductDetailHeroProps> = ({
                 )}
               </div>
 
-              {/* Key Benefits */}
-              <div className="space-y-3">
-                <h3 className="text-lg font-semibold text-gray-900">Key Benefits</h3>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Icon name="star" className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-700">Gentle on all skin types</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="star" className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-700">Dermatologist tested</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="star" className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-700">Cruelty-free formula</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Icon name="star" className="w-4 h-4 text-green-500" />
-                    <span className="text-gray-700">Made with natural ingredients</span>
-                  </li>
-                </ul>
-              </div>
+              {/* Key Benefits (fallback to sensible defaults if missing) */}
+              {(Array.isArray(product.keyBenefits) ? product.keyBenefits.length > 0 : false) ? (
+                <div className="space-y-3">
+                  <h3 className="text-lg font-semibold text-gray-900">Key Benefits</h3>
+                  <ul className="space-y-2">
+                    {(product.keyBenefits || []).map((benefit, idx) => (
+                      <li key={idx} className="flex items-center gap-2">
+                        <Icon name="star" className="w-4 h-4 text-green-500" />
+                        <span className="text-gray-700">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  <h3 className="text-lg font-semibold text-gray-900">Key Benefits</h3>
+                  <ul className="space-y-2">
+                    {["Gentle on all skin types", "Dermatologist tested", "Cruelty-free formula", "Made with natural ingredients"].map((benefit, idx) => (
+                      <li key={idx} className="flex items-center gap-2">
+                        <Icon name="star" className="w-4 h-4 text-green-500" />
+                        <span className="text-gray-700">{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               {/* Size Selection */}
               {product.sizes && product.sizes.length > 0 && (
@@ -237,27 +238,51 @@ const ProductDetailHero: React.FC<ProductDetailHeroProps> = ({
                   <button className="flex-1 bg-pink-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-pink-700 transition-colors duration-200">
                     Buy Now
                   </button>
-                  <button className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                  {/* <button className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
                     <Icon name="heart" className="w-5 h-5" />
-                  </button>
+                  </button> */}
                 </div>
+
+                {/* Delivery Information */}
+                {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                  <div className="flex items-center gap-2 bg-gray-50 rounded-lg p-3">
+                    <Icon name="send" className="w-4 h-4 text-gray-700" />
+                    <span className="text-sm text-gray-700">Free Shipping</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-gray-50 rounded-lg p-3">
+                    <Icon name="star" className="w-4 h-4 text-gray-700" />
+                    <span className="text-sm text-gray-700">30-day Money-back</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-gray-50 rounded-lg p-3">
+                    <Icon name="heart" className="w-4 h-4 text-gray-700" />
+                    <span className="text-sm text-gray-700">Cruelty-free & Vegan</span>
+                  </div>
+                </div> */}
               </div>
 
               {/* Shipping Info */}
-              <div className="bg-gray-50 rounded-lg p-4 space-y-2">
-                <div className="flex items-center gap-2">
-                  <Icon name="send" className="w-4 h-4 text-green-500" />
-                  <span className="text-sm font-medium text-gray-900">Free Shipping</span>
+              {(product.shipping?.freeShipping || product.shipping?.moneyBackGuarantee || product.shipping?.crueltyFree) && (
+                <div className="bg-gray-50 rounded-lg p-4 space-y-2">
+                  {product.shipping?.freeShipping && (
+                    <div className="flex items-center gap-2">
+                      <Icon name="send" className="w-4 h-4 text-green-500" />
+                      <span className="text-sm font-medium text-gray-900">Free Shipping</span>
+                    </div>
+                  )}
+                  {product.shipping?.moneyBackGuarantee && (
+                    <div className="flex items-center gap-2">
+                      <Icon name="star" className="w-4 h-4 text-green-500" />
+                      <span className="text-sm text-gray-600">30-day money-back guarantee</span>
+                    </div>
+                  )}
+                  {product.shipping?.crueltyFree && (
+                    <div className="flex items-center gap-2">
+                      <Icon name="heart" className="w-4 h-4 text-green-500" />
+                      <span className="text-sm text-gray-600">Cruelty-free & vegan</span>
+                    </div>
+                  )}
                 </div>
-                <div className="flex items-center gap-2">
-                  <Icon name="star" className="w-4 h-4 text-green-500" />
-                  <span className="text-sm text-gray-600">30-day money-back guarantee</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Icon name="heart" className="w-4 h-4 text-green-500" />
-                  <span className="text-sm text-gray-600">Cruelty-free & vegan</span>
-                </div>
-              </div>
+              )}
             </div>
           </Reveal>
         </div>

@@ -13,6 +13,24 @@ export interface Product {
   reviewCount?: number;
   description?: string;
   tags?: string[];
+  images?: Array<{ alt?: string; imageSrc?: string; url?: string }>;
+  keyBenefits?: string[];
+  keyFeatures?: string[];
+  ingredients?: string[];
+  howToUse?: string[];
+  shipping?: {
+    freeShipping?: boolean;
+    moneyBackGuarantee?: boolean;
+    crueltyFree?: boolean;
+  };
+  reviews?: Array<{
+    id?: string | number;
+    name?: string;
+    rating?: number;
+    date?: string;
+    comment?: string;
+    verified?: boolean;
+  }>;
 }
 
 export type ProductCategory = 

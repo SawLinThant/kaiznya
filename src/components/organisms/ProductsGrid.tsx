@@ -2,6 +2,7 @@
 
 import React, { useState, useCallback, useMemo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { Product } from '@/types/product';
 import { Icon } from '@/components';
@@ -55,11 +56,13 @@ const ProductCard: React.FC<{
         <div className="relative bg-white rounded-2xl overflow-hidden h-full flex flex-col shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
           {/* Product Image Container */}
           <div className="relative h-80 overflow-hidden">
-            <img
-              src={product.image}
+            <Image
+              src={product.image || '/vercel.svg'}
               alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
+              fill
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              priority={index < 4}
             />
             
             {/* Like Button */}

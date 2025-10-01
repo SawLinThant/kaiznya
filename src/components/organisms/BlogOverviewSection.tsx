@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { getBlogPosts } from '@/lib/mockData';
@@ -34,12 +35,14 @@ const BlogOverviewSection: React.FC<BlogOverviewSectionProps> = ({ dict, locale 
           {/* Left Image */}
           <div className="lg:col-span-6">
             <Link href={`/${locale}/blog/${featured.slug || 'complete-guide-korean-skincare-routine'}`}>
-              <div className="relative rounded-[22px] overflow-hidden bg-gray-100 cursor-pointer group">
-                <img
-                  src={featured.image}
+              <div className="relative rounded-[22px] overflow-hidden bg-gray-100 cursor-pointer group h-[260px] sm:h-[320px] lg:h-[360px]">
+                <Image
+                  src={featured.image || '/vercel.svg'}
                   alt={featured.title}
-                  className="w-full h-[260px] sm:h-[320px] lg:h-[360px] object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  priority={false}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
               </div>

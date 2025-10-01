@@ -26,23 +26,9 @@ const ProductDetailTabs: React.FC<ProductDetailTabsProps> = ({
     { id: 'reviews', label: 'Reviews', icon: 'star' },
   ];
 
-  const mockIngredients = [
-    'Aqua (Water)',
-    'Glycerin',
-    'Sodium Hyaluronate',
-    'Niacinamide',
-    'Retinol',
-    'Vitamin C',
-    'Hyaluronic Acid',
-    'Peptides',
-    'Ceramides',
-    'Jojoba Oil',
-    'Aloe Vera Extract',
-    'Green Tea Extract',
-    'Chamomile Extract',
-    'Phenoxyethanol',
-    'Ethylhexylglycerin'
-  ];
+  const ingredients = Array.isArray(product.ingredients) && product.ingredients.length > 0
+    ? product.ingredients
+    : [];
 
   const mockReviews = [
     {
@@ -79,7 +65,7 @@ const ProductDetailTabs: React.FC<ProductDetailTabsProps> = ({
             <div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Product Description</h3>
               <p className="text-gray-700 leading-relaxed">
-                {product.description || 'This premium skincare product is formulated with the finest ingredients to deliver exceptional results. Our carefully crafted formula combines advanced skincare technology with natural extracts to provide your skin with the nourishment it deserves.'}
+                {product.description}
               </p>
             </div>
             
@@ -121,14 +107,18 @@ const ProductDetailTabs: React.FC<ProductDetailTabsProps> = ({
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {mockIngredients.map((ingredient, index) => (
-                <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
-                  <Icon name="star" className="w-4 h-4 text-pink-500 flex-shrink-0" />
-                  <span className="text-gray-700">{ingredient}</span>
-                </div>
-              ))}
-            </div>
+            {ingredients.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {ingredients.map((ingredient, index) => (
+                  <div key={index} className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+                    <Icon name="star" className="w-4 h-4 text-pink-500 flex-shrink-0" />
+                    <span className="text-gray-700">{ingredient}</span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p className="text-gray-600">Ingredients information will be available soon.</p>
+            )}
             
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
               <h4 className="text-sm font-semibold text-blue-900 mb-2">Important Note</h4>
@@ -149,47 +139,22 @@ const ProductDetailTabs: React.FC<ProductDetailTabsProps> = ({
               </p>
             </div>
             
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                  1
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Cleanse Your Face</h4>
-                  <p className="text-gray-700">Start with a clean face. Use your regular cleanser to remove dirt, oil, and makeup.</p>
-                </div>
+            {Array.isArray(product.howToUse) && product.howToUse.length > 0 ? (
+              <div className="space-y-6">
+                {product.howToUse.map((step, idx) => (
+                  <div key={idx} className="flex gap-4">
+                    <div className="flex-shrink-0 w-8 h-8 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center font-semibold text-sm">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <p className="text-gray-700">{step}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                  2
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Apply the Product</h4>
-                  <p className="text-gray-700">Take a small amount and gently massage onto your face and neck using upward circular motions.</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                  3
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Let It Absorb</h4>
-                  <p className="text-gray-700">Allow the product to fully absorb into your skin before applying other products.</p>
-                </div>
-              </div>
-              
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center font-semibold text-sm">
-                  4
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Follow with Moisturizer</h4>
-                  <p className="text-gray-700">Complete your routine with your favorite moisturizer and sunscreen during the day.</p>
-                </div>
-              </div>
-            </div>
+            ) : (
+              <p className="text-gray-600">Usage instructions will be available soon.</p>
+            )}
             
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
               <h4 className="text-sm font-semibold text-yellow-900 mb-2">Pro Tip</h4>

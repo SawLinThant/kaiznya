@@ -34,12 +34,26 @@ const transformCDNProduct = (cdnProduct: any): Product => {
     category: categoryMap[Number(cdnProduct.category_id)] || 'face-serum',
     isLiked: false,
     brand: cdnProduct.brand,
-    colors: [],
-    sizes: [],
+    colors: Array.isArray(cdnProduct.variants)
+      ? cdnProduct.variants.filter((v: any) => v.type === 'color').map((v: any) => v.value)
+      : [],
+    sizes: Array.isArray(cdnProduct.variants)
+      ? cdnProduct.variants.filter((v: any) => v.type === 'size').map((v: any) => v.value)
+      : [],
     rating: cdnProduct.rating,
     reviewCount: cdnProduct.reviewCount,
     description: cdnProduct.description || cdnProduct.short_description || '',
     tags: Array.isArray(cdnProduct.tags) ? cdnProduct.tags : [],
+    images: Array.isArray(cdnProduct.images) ? cdnProduct.images : undefined,
+    keyBenefits: Array.isArray(cdnProduct.keyBenefits) ? cdnProduct.keyBenefits : undefined,
+    keyFeatures: Array.isArray(cdnProduct.keyFeatures) ? cdnProduct.keyFeatures : undefined,
+    ingredients: Array.isArray(cdnProduct.ingredients) ? cdnProduct.ingredients : undefined,
+    howToUse: Array.isArray(cdnProduct.howToUse) ? cdnProduct.howToUse : undefined,
+    shipping: cdnProduct.shipping ? {
+      freeShipping: Boolean(cdnProduct.shipping.freeShipping),
+      moneyBackGuarantee: Boolean(cdnProduct.shipping.moneyBackGuarantee),
+      crueltyFree: Boolean(cdnProduct.shipping.crueltyFree),
+    } : undefined,
   };
 };
 
